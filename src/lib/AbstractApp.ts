@@ -80,9 +80,14 @@ export abstract class AbstractApp {
 
         // assign appManager to fields marked with @AssignAppManager decorator
         for (let element of value) {
+          // Reflect.getMetadata needs target to be an object
+          if (typeof element.item !== "object" && typeof element.item !== "function") {
+            continue;
+          }
+
           const fields: string[] = Reflect.getMetadata("assignAppManagerFields", element.item) || [];
           for (const field of fields) {
-            if (Object.keys(element.item).includes(field)) {
+            if (Object.prototype.hasOwnProperty.call(element.item, field)) {
               element.item[field] = this.appManager;
             }
           }
