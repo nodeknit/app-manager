@@ -1,0 +1,106 @@
+[2025-03-29T08:52:09.520Z] INFO: Connected to PostgreSQL! 
+[2025-03-29T08:52:09.524Z] INFO: Sequelize ORM initialized! 
+[2025-03-29T08:52:09.584Z] INFO: Models [App, Setting] have been registered. 
+[2025-03-29T08:52:09.585Z] INFO: Controller mounted for app system: /switch 
+[2025-03-29T08:52:09.591Z] INFO: Setting ALLOW_UNSAFE_SETTINGS was set 
+[2025-03-29T08:52:09.597Z] ERROR: Can not load app [C:\Users\rsere\WebstormProjects\app-manager\fixture/apps/example] Error [ERR_MODULE_NOT_FOUND]: Cannot find module 'C:\Users\rsere\WebstormProjects\app-manager\fixture\apps\example\models\ExampleModel' imported from C:\Users\rsere\WebstormProjects\app-manager\fixture\apps\example\index.js
+    at finalizeResolution (node:internal/modules/esm/resolve:265:11)
+    at moduleResolve (node:internal/modules/esm/resolve:933:10)
+    at defaultResolve (node:internal/modules/esm/resolve:1157:11)
+    at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:390:12)
+    at ModuleLoader.resolve (node:internal/modules/esm/loader:359:25)
+    at ModuleLoader.getModuleJob (node:internal/modules/esm/loader:234:38)
+    at ModuleWrap.<anonymous> (node:internal/modules/esm/module_job:87:39)
+    at link (node:internal/modules/esm/module_job:86:36) 
+[2025-03-29T08:52:09.597Z] INFO: System app mounted 
+[2025-03-29T08:52:09.601Z] INFO: AppManager started on http://localhost:3000 
+[2025-03-29T08:52:56.992Z] INFO: Connected to PostgreSQL! 
+[2025-03-29T08:52:56.996Z] INFO: Sequelize ORM initialized! 
+[2025-03-29T08:52:57.046Z] INFO: Models [App, Setting] have been registered. 
+[2025-03-29T08:52:57.046Z] INFO: Controller mounted for app system: /switch 
+[2025-03-29T08:52:57.052Z] INFO: Setting ALLOW_UNSAFE_SETTINGS was set 
+[2025-03-29T08:52:57.058Z] ERROR: Can not load app [C:\Users\rsere\WebstormProjects\app-manager\fixture/apps/example] Error [ERR_MODULE_NOT_FOUND]: Cannot find module 'C:\Users\rsere\WebstormProjects\app-manager\fixture\apps\example\models\ExampleModel' imported from C:\Users\rsere\WebstormProjects\app-manager\fixture\apps\example\index.js
+    at finalizeResolution (node:internal/modules/esm/resolve:265:11)
+    at moduleResolve (node:internal/modules/esm/resolve:933:10)
+    at defaultResolve (node:internal/modules/esm/resolve:1157:11)
+    at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:390:12)
+    at ModuleLoader.resolve (node:internal/modules/esm/loader:359:25)
+    at ModuleLoader.getModuleJob (node:internal/modules/esm/loader:234:38)
+    at ModuleWrap.<anonymous> (node:internal/modules/esm/module_job:87:39)
+    at link (node:internal/modules/esm/module_job:86:36) 
+[2025-03-29T08:52:57.058Z] INFO: System app mounted 
+[2025-03-29T08:52:57.061Z] INFO: AppManager started on http://localhost:3000 
+[2025-03-29T08:53:13.630Z] INFO: Connected to PostgreSQL! 
+[2025-03-29T08:53:13.634Z] INFO: Sequelize ORM initialized! 
+[2025-03-29T08:53:13.687Z] INFO: Models [App, Setting] have been registered. 
+[2025-03-29T08:53:13.687Z] INFO: Controller mounted for app system: /switch 
+[2025-03-29T08:53:13.693Z] INFO: Setting ALLOW_UNSAFE_SETTINGS was set 
+[2025-03-29T08:53:13.699Z] ERROR: Can not load app [C:\Users\rsere\WebstormProjects\app-manager\fixture/apps/example] Error [ERR_MODULE_NOT_FOUND]: Cannot find module 'C:\Users\rsere\WebstormProjects\app-manager\fixture\apps\example\controllers\ExampleController' imported from C:\Users\rsere\WebstormProjects\app-manager\fixture\apps\example\index.js
+    at finalizeResolution (node:internal/modules/esm/resolve:265:11)
+    at moduleResolve (node:internal/modules/esm/resolve:933:10)
+    at defaultResolve (node:internal/modules/esm/resolve:1157:11)
+    at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:390:12)
+    at ModuleLoader.resolve (node:internal/modules/esm/loader:359:25)
+    at ModuleLoader.getModuleJob (node:internal/modules/esm/loader:234:38)
+    at ModuleWrap.<anonymous> (node:internal/modules/esm/module_job:87:39)
+    at link (node:internal/modules/esm/module_job:86:36) 
+[2025-03-29T08:53:13.699Z] INFO: System app mounted 
+[2025-03-29T08:53:13.702Z] INFO: AppManager started on http://localhost:3000 
+[2025-03-29T08:53:27.244Z] INFO: Connected to PostgreSQL! 
+[2025-03-29T08:53:27.248Z] INFO: Sequelize ORM initialized! 
+[2025-03-29T08:53:27.302Z] INFO: Models [App, Setting] have been registered. 
+[2025-03-29T08:53:27.302Z] INFO: Controller mounted for app system: /switch 
+[2025-03-29T08:53:27.309Z] INFO: Setting ALLOW_UNSAFE_SETTINGS was set 
+[2025-03-29T08:53:27.314Z] ERROR: Can not load app [C:\Users\rsere\WebstormProjects\app-manager\fixture/apps/example] Error [ERR_MODULE_NOT_FOUND]: Cannot find module 'C:\Users\rsere\WebstormProjects\app-manager\dist\lib\CollectionStorage' imported from C:\Users\rsere\WebstormProjects\app-manager\fixture\apps\example\index.js
+    at finalizeResolution (node:internal/modules/esm/resolve:265:11)
+    at moduleResolve (node:internal/modules/esm/resolve:933:10)
+    at defaultResolve (node:internal/modules/esm/resolve:1157:11)
+    at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:390:12)
+    at ModuleLoader.resolve (node:internal/modules/esm/loader:359:25)
+    at ModuleLoader.getModuleJob (node:internal/modules/esm/loader:234:38)
+    at ModuleWrap.<anonymous> (node:internal/modules/esm/module_job:87:39)
+    at link (node:internal/modules/esm/module_job:86:36) 
+[2025-03-29T08:53:27.315Z] INFO: System app mounted 
+[2025-03-29T08:53:27.318Z] INFO: AppManager started on http://localhost:3000 
+[2025-03-29T08:53:44.686Z] INFO: Connected to PostgreSQL! 
+[2025-03-29T08:53:44.691Z] INFO: Sequelize ORM initialized! 
+[2025-03-29T08:53:44.743Z] INFO: Models [App, Setting] have been registered. 
+[2025-03-29T08:53:44.744Z] INFO: Controller mounted for app system: /switch 
+[2025-03-29T08:53:44.750Z] INFO: Setting ALLOW_UNSAFE_SETTINGS was set 
+[2025-03-29T08:53:44.755Z] ERROR: Can not load app [C:\Users\rsere\WebstormProjects\app-manager\fixture/apps/example] Error [ERR_MODULE_NOT_FOUND]: Cannot find module 'C:\Users\rsere\WebstormProjects\app-manager\dist\lib\CollectionStorage' imported from C:\Users\rsere\WebstormProjects\app-manager\fixture\apps\example\index.js
+    at finalizeResolution (node:internal/modules/esm/resolve:265:11)
+    at moduleResolve (node:internal/modules/esm/resolve:933:10)
+    at defaultResolve (node:internal/modules/esm/resolve:1157:11)
+    at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:390:12)
+    at ModuleLoader.resolve (node:internal/modules/esm/loader:359:25)
+    at ModuleLoader.getModuleJob (node:internal/modules/esm/loader:234:38)
+    at ModuleWrap.<anonymous> (node:internal/modules/esm/module_job:87:39)
+    at link (node:internal/modules/esm/module_job:86:36) 
+[2025-03-29T08:53:44.756Z] INFO: System app mounted 
+[2025-03-29T08:53:44.759Z] INFO: AppManager started on http://localhost:3000 
+[2025-03-29T08:53:52.596Z] INFO: Connected to PostgreSQL! 
+[2025-03-29T08:53:52.600Z] INFO: Sequelize ORM initialized! 
+[2025-03-29T08:53:52.648Z] INFO: Models [App, Setting] have been registered. 
+[2025-03-29T08:53:52.649Z] INFO: Controller mounted for app system: /switch 
+[2025-03-29T08:53:52.654Z] INFO: Setting ALLOW_UNSAFE_SETTINGS was set 
+[2025-03-29T08:53:52.660Z] ERROR: Can not load app [C:\Users\rsere\WebstormProjects\app-manager\fixture/apps/example] Error [ERR_MODULE_NOT_FOUND]: Cannot find module 'C:\Users\rsere\WebstormProjects\app-manager\fixture\apps\example\settings\exampleSetting' imported from C:\Users\rsere\WebstormProjects\app-manager\fixture\apps\example\index.js
+    at finalizeResolution (node:internal/modules/esm/resolve:265:11)
+    at moduleResolve (node:internal/modules/esm/resolve:933:10)
+    at defaultResolve (node:internal/modules/esm/resolve:1157:11)
+    at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:390:12)
+    at ModuleLoader.resolve (node:internal/modules/esm/loader:359:25)
+    at ModuleLoader.getModuleJob (node:internal/modules/esm/loader:234:38)
+    at ModuleWrap.<anonymous> (node:internal/modules/esm/module_job:87:39)
+    at link (node:internal/modules/esm/module_job:86:36) 
+[2025-03-29T08:53:52.661Z] INFO: System app mounted 
+[2025-03-29T08:53:52.664Z] INFO: AppManager started on http://localhost:3000 
+[2025-03-29T08:54:04.242Z] INFO: Connected to PostgreSQL! 
+[2025-03-29T08:54:04.246Z] INFO: Sequelize ORM initialized! 
+[2025-03-29T08:54:04.298Z] INFO: Models [App, Setting] have been registered. 
+[2025-03-29T08:54:04.299Z] INFO: Controller mounted for app system: /switch 
+[2025-03-29T08:54:04.305Z] INFO: Setting ALLOW_UNSAFE_SETTINGS was set 
+[2025-03-29T08:54:04.365Z] INFO: Controller mounted for app example: /example 
+[2025-03-29T08:54:04.420Z] INFO: Models [ExampleModel] have been registered. 
+[2025-03-29T08:54:04.421Z] INFO: Setting example-setting was set 
+[2025-03-29T08:54:04.422Z] INFO: System app mounted 
+[2025-03-29T08:54:04.424Z] INFO: AppManager started on http://localhost:3000 

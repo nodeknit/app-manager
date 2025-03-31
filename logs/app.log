@@ -1,0 +1,503 @@
+[2025-03-29T08:08:29.047Z] WARN: Listener for "testEvent" exceeded 100 ms timeout and was stopped 
+[2025-03-29T08:08:29.056Z] ERROR: Error trying to call listeners for event "testEvent": Error: Timeout exceeded for event "testEvent" 
+[2025-03-29T08:08:29.064Z] WARN: Event "testEvent" was not found in EventStorage 
+[2025-03-29T08:08:29.279Z] INFO: Assets for app testApp added: /assets/testApp → C:\test\apps\testApp\assets 
+[2025-03-29T08:08:29.284Z] WARN: Assets folder not found for app testApp: C:\test\apps\testApp\assets 
+[2025-03-29T08:08:29.285Z] INFO: Assets for app testApp added: /assets/testApp → C:\test\apps\testApp\assets 
+[2025-03-29T08:08:29.285Z] INFO: Assets route removed for app testApp: /assets/testApp 
+[2025-03-29T08:08:29.288Z] INFO: Controller mounted for app testApp: /api 
+[2025-03-29T08:08:29.289Z] INFO: Controller mounted for app testApp: /api 
+[2025-03-29T08:08:29.289Z] INFO: Controller removed for app testApp: /api 
+[2025-03-29T08:08:29.290Z] INFO: Added middleware for app testApp 
+[2025-03-29T08:08:29.291Z] INFO: Added middleware for app testApp 
+[2025-03-29T08:08:29.292Z] INFO: Middleware removed for app testApp 
+[2025-03-29T08:08:29.293Z] INFO: Models [TestModel] have been registered. 
+[2025-03-29T08:08:29.294Z] INFO: Model TestModel has been unregistered. 
+[2025-03-29T08:08:29.295Z] INFO: Setting TEST_SETTING was set 
+[2025-03-29T08:08:29.296Z] INFO: Setting TEST_SETTING was removed from storage 
+[2025-03-29T08:10:48.211Z] WARN: Listener for "testEvent" exceeded 100 ms timeout and was stopped 
+[2025-03-29T08:10:48.223Z] ERROR: Error trying to call listeners for event "testEvent": Error: Timeout exceeded for event "testEvent" 
+[2025-03-29T08:10:48.233Z] WARN: Event "testEvent" was not found in EventStorage 
+[2025-03-29T08:10:48.484Z] INFO: Assets for app testApp added: /assets/testApp → C:\test\apps\testApp\assets 
+[2025-03-29T08:10:48.490Z] WARN: Assets folder not found for app testApp: C:\test\apps\testApp\assets 
+[2025-03-29T08:10:48.491Z] INFO: Assets for app testApp added: /assets/testApp → C:\test\apps\testApp\assets 
+[2025-03-29T08:10:48.491Z] INFO: Assets route removed for app testApp: /assets/testApp 
+[2025-03-29T08:10:48.493Z] INFO: Controller mounted for app testApp: /api 
+[2025-03-29T08:10:48.494Z] INFO: Controller mounted for app testApp: /api 
+[2025-03-29T08:10:48.495Z] INFO: Controller removed for app testApp: /api 
+[2025-03-29T08:10:48.496Z] INFO: Added middleware for app testApp 
+[2025-03-29T08:10:48.497Z] INFO: Added middleware for app testApp 
+[2025-03-29T08:10:48.497Z] INFO: Middleware removed for app testApp 
+[2025-03-29T08:10:48.498Z] INFO: Models [TestModel] have been registered. 
+[2025-03-29T08:10:48.500Z] INFO: Model TestModel has been unregistered. 
+[2025-03-29T08:10:48.501Z] INFO: Setting TEST_SETTING was set 
+[2025-03-29T08:10:48.502Z] INFO: Setting TEST_SETTING was removed from storage 
+[2025-03-29T08:10:48.746Z] INFO: Model App was not registered for app system because it already exists. Skipping. 
+[2025-03-29T08:10:48.748Z] INFO: Model Setting was not registered for app system because it already exists. Skipping. 
+[2025-03-29T08:10:48.791Z] INFO: Models [] have been registered. 
+[2025-03-29T08:10:48.791Z] INFO: Controller mounted for app system: /switch 
+[2025-03-29T08:10:48.796Z] INFO: Setting ALLOW_UNSAFE_SETTINGS was set 
+[2025-03-29T08:10:48.797Z] INFO: System app mounted 
+[2025-03-29T08:10:48.802Z] INFO: Setting saved in database: ALLOW_UNSAFE_SETTINGS: true 
+[2025-03-29T08:10:48.855Z] INFO: Setting saved in database: ALLOW_UNSAFE_SETTINGS: false 
+[2025-03-29T08:11:58.894Z] WARN: Listener for "testEvent" exceeded 100 ms timeout and was stopped 
+[2025-03-29T08:11:58.902Z] ERROR: Error trying to call listeners for event "testEvent": Error: Timeout exceeded for event "testEvent" 
+[2025-03-29T08:11:58.908Z] WARN: Event "testEvent" was not found in EventStorage 
+[2025-03-29T08:11:59.120Z] INFO: Assets for app testApp added: /assets/testApp → C:\test\apps\testApp\assets 
+[2025-03-29T08:11:59.127Z] WARN: Assets folder not found for app testApp: C:\test\apps\testApp\assets 
+[2025-03-29T08:11:59.129Z] INFO: Assets for app testApp added: /assets/testApp → C:\test\apps\testApp\assets 
+[2025-03-29T08:11:59.129Z] INFO: Assets route removed for app testApp: /assets/testApp 
+[2025-03-29T08:11:59.132Z] INFO: Controller mounted for app testApp: /api 
+[2025-03-29T08:11:59.133Z] INFO: Controller mounted for app testApp: /api 
+[2025-03-29T08:11:59.134Z] INFO: Controller removed for app testApp: /api 
+[2025-03-29T08:11:59.135Z] INFO: Added middleware for app testApp 
+[2025-03-29T08:11:59.136Z] INFO: Added middleware for app testApp 
+[2025-03-29T08:11:59.136Z] INFO: Middleware removed for app testApp 
+[2025-03-29T08:11:59.137Z] INFO: Models [TestModel] have been registered. 
+[2025-03-29T08:11:59.138Z] INFO: Model TestModel has been unregistered. 
+[2025-03-29T08:11:59.139Z] INFO: Setting TEST_SETTING was set 
+[2025-03-29T08:11:59.140Z] INFO: Setting TEST_SETTING was removed from storage 
+[2025-03-29T08:11:59.309Z] INFO: Model App was not registered for app system because it already exists. Skipping. 
+[2025-03-29T08:11:59.312Z] INFO: Model Setting was not registered for app system because it already exists. Skipping. 
+[2025-03-29T08:11:59.347Z] INFO: Models [] have been registered. 
+[2025-03-29T08:11:59.348Z] INFO: Controller mounted for app system: /switch 
+[2025-03-29T08:11:59.353Z] INFO: Setting ALLOW_UNSAFE_SETTINGS was set 
+[2025-03-29T08:11:59.354Z] INFO: System app mounted 
+[2025-03-29T08:11:59.359Z] INFO: Setting saved in database: ALLOW_UNSAFE_SETTINGS: true 
+[2025-03-29T08:11:59.409Z] INFO: Setting saved in database: ALLOW_UNSAFE_SETTINGS: false 
+[2025-03-29T08:16:46.450Z] WARN: Timeout exceeded for event "testEvent" 
+[2025-03-29T08:16:46.454Z] ERROR: Error trying to call listeners for event "testEvent": Error: Timeout exceeded for event "testEvent" 
+[2025-03-29T08:16:46.463Z] WARN: Event "testEvent" was not found in EventStorage 
+[2025-03-29T08:16:46.465Z] WARN: Listener for "testEvent" exceeded 100 ms timeout and was stopped 
+[2025-03-29T08:16:46.698Z] INFO: Assets for app testApp added: /assets/testApp → C:\test\apps\testApp\assets 
+[2025-03-29T08:16:46.703Z] WARN: Assets folder not found for app testApp: C:\test\apps\testApp\assets 
+[2025-03-29T08:16:46.704Z] INFO: Assets for app testApp added: /assets/testApp → C:\test\apps\testApp\assets 
+[2025-03-29T08:16:46.705Z] INFO: Assets route removed for app testApp: /assets/testApp 
+[2025-03-29T08:16:46.706Z] INFO: Controller mounted for app testApp: /api 
+[2025-03-29T08:16:46.707Z] INFO: Controller mounted for app testApp: /api 
+[2025-03-29T08:16:46.708Z] INFO: Controller removed for app testApp: /api 
+[2025-03-29T08:16:46.709Z] INFO: Added middleware for app testApp 
+[2025-03-29T08:16:46.710Z] INFO: Added middleware for app testApp 
+[2025-03-29T08:16:46.710Z] INFO: Middleware removed for app testApp 
+[2025-03-29T08:16:46.711Z] INFO: Models [TestModel] have been registered. 
+[2025-03-29T08:16:46.713Z] INFO: Model TestModel has been unregistered. 
+[2025-03-29T08:16:46.714Z] INFO: Setting TEST_SETTING was set 
+[2025-03-29T08:16:46.715Z] INFO: Setting TEST_SETTING was removed from storage 
+[2025-03-29T08:16:46.895Z] INFO: Model App was not registered for app system because it already exists. Skipping. 
+[2025-03-29T08:16:46.898Z] INFO: Model Setting was not registered for app system because it already exists. Skipping. 
+[2025-03-29T08:16:46.931Z] INFO: Models [] have been registered. 
+[2025-03-29T08:16:46.932Z] INFO: Controller mounted for app system: /switch 
+[2025-03-29T08:16:46.937Z] INFO: Setting ALLOW_UNSAFE_SETTINGS was set 
+[2025-03-29T08:16:46.938Z] INFO: System app mounted 
+[2025-03-29T08:16:46.944Z] INFO: Setting saved in database: ALLOW_UNSAFE_SETTINGS: true 
+[2025-03-29T08:16:47.001Z] INFO: Setting saved in database: ALLOW_UNSAFE_SETTINGS: false 
+[2025-03-29T08:17:20.782Z] WARN: Timeout exceeded for event "testEvent" 
+[2025-03-29T08:17:20.786Z] ERROR: Error trying to call listeners for event "testEvent": Error: Timeout exceeded for event "testEvent" 
+[2025-03-29T08:17:20.794Z] WARN: Event "testEvent" was not found in EventStorage 
+[2025-03-29T08:17:20.796Z] WARN: Listener for "testEvent" exceeded 100 ms timeout and was stopped 
+[2025-03-29T08:17:21.021Z] INFO: Assets for app testApp added: /assets/testApp → C:\test\apps\testApp\assets 
+[2025-03-29T08:17:21.027Z] WARN: Assets folder not found for app testApp: C:\test\apps\testApp\assets 
+[2025-03-29T08:17:21.028Z] INFO: Assets for app testApp added: /assets/testApp → C:\test\apps\testApp\assets 
+[2025-03-29T08:17:21.028Z] INFO: Assets route removed for app testApp: /assets/testApp 
+[2025-03-29T08:17:21.030Z] INFO: Controller mounted for app testApp: /api 
+[2025-03-29T08:17:21.031Z] INFO: Controller mounted for app testApp: /api 
+[2025-03-29T08:17:21.031Z] INFO: Controller removed for app testApp: /api 
+[2025-03-29T08:17:21.032Z] INFO: Added middleware for app testApp 
+[2025-03-29T08:17:21.033Z] INFO: Added middleware for app testApp 
+[2025-03-29T08:17:21.033Z] INFO: Middleware removed for app testApp 
+[2025-03-29T08:17:21.034Z] INFO: Models [TestModel] have been registered. 
+[2025-03-29T08:17:21.035Z] INFO: Model TestModel has been unregistered. 
+[2025-03-29T08:17:21.037Z] INFO: Setting TEST_SETTING was set 
+[2025-03-29T08:17:21.037Z] INFO: Setting TEST_SETTING was removed from storage 
+[2025-03-29T08:17:21.192Z] INFO: Model App was not registered for app system because it already exists. Skipping. 
+[2025-03-29T08:17:21.195Z] INFO: Model Setting was not registered for app system because it already exists. Skipping. 
+[2025-03-29T08:17:21.226Z] INFO: Models [] have been registered. 
+[2025-03-29T08:17:21.227Z] INFO: Controller mounted for app system: /switch 
+[2025-03-29T08:17:21.232Z] INFO: Setting ALLOW_UNSAFE_SETTINGS was set 
+[2025-03-29T08:17:21.233Z] INFO: System app mounted 
+[2025-03-29T08:17:21.238Z] INFO: Setting saved in database: ALLOW_UNSAFE_SETTINGS: true 
+[2025-03-29T08:17:21.303Z] INFO: Setting saved in database: ALLOW_UNSAFE_SETTINGS: false 
+[2025-03-29T08:17:34.248Z] WARN: Timeout exceeded for event "testEvent" 
+[2025-03-29T08:17:34.253Z] ERROR: Error trying to call listeners for event "testEvent": Error: Timeout exceeded for event "testEvent" 
+[2025-03-29T08:17:34.263Z] WARN: Event "testEvent" was not found in EventStorage 
+[2025-03-29T08:17:34.265Z] WARN: Listener for "testEvent" exceeded 100 ms timeout and was stopped 
+[2025-03-29T08:17:34.468Z] INFO: Assets for app testApp added: /assets/testApp → C:\test\apps\testApp\assets 
+[2025-03-29T08:17:34.474Z] WARN: Assets folder not found for app testApp: C:\test\apps\testApp\assets 
+[2025-03-29T08:17:34.475Z] INFO: Assets for app testApp added: /assets/testApp → C:\test\apps\testApp\assets 
+[2025-03-29T08:17:34.475Z] INFO: Assets route removed for app testApp: /assets/testApp 
+[2025-03-29T08:17:34.477Z] INFO: Controller mounted for app testApp: /api 
+[2025-03-29T08:17:34.478Z] INFO: Controller mounted for app testApp: /api 
+[2025-03-29T08:17:34.478Z] INFO: Controller removed for app testApp: /api 
+[2025-03-29T08:17:34.480Z] INFO: Added middleware for app testApp 
+[2025-03-29T08:17:34.480Z] INFO: Added middleware for app testApp 
+[2025-03-29T08:17:34.481Z] INFO: Middleware removed for app testApp 
+[2025-03-29T08:17:34.482Z] INFO: Models [TestModel] have been registered. 
+[2025-03-29T08:17:34.483Z] INFO: Model TestModel has been unregistered. 
+[2025-03-29T08:17:34.484Z] INFO: Setting TEST_SETTING was set 
+[2025-03-29T08:17:34.485Z] INFO: Setting TEST_SETTING was removed from storage 
+[2025-03-29T08:17:34.650Z] INFO: Model App was not registered for app system because it already exists. Skipping. 
+[2025-03-29T08:17:34.652Z] INFO: Model Setting was not registered for app system because it already exists. Skipping. 
+[2025-03-29T08:17:34.684Z] INFO: Models [] have been registered. 
+[2025-03-29T08:17:34.685Z] INFO: Controller mounted for app system: /switch 
+[2025-03-29T08:17:34.691Z] INFO: Setting ALLOW_UNSAFE_SETTINGS was set 
+[2025-03-29T08:17:34.691Z] INFO: System app mounted 
+[2025-03-29T08:17:34.696Z] INFO: Setting saved in database: ALLOW_UNSAFE_SETTINGS: true 
+[2025-03-29T08:17:34.748Z] INFO: Setting saved in database: ALLOW_UNSAFE_SETTINGS: false 
+[2025-03-29T08:19:46.923Z] WARN: Timeout exceeded for event "testEvent" 
+[2025-03-29T08:19:46.929Z] WARN: Event "testEvent" was not found in EventStorage 
+[2025-03-29T08:19:47.196Z] INFO: Assets for app testApp added: /assets/testApp → C:\test\apps\testApp\assets 
+[2025-03-29T08:19:47.203Z] WARN: Assets folder not found for app testApp: C:\test\apps\testApp\assets 
+[2025-03-29T08:19:47.204Z] INFO: Assets for app testApp added: /assets/testApp → C:\test\apps\testApp\assets 
+[2025-03-29T08:19:47.204Z] INFO: Assets route removed for app testApp: /assets/testApp 
+[2025-03-29T08:19:47.206Z] INFO: Controller mounted for app testApp: /api 
+[2025-03-29T08:19:47.207Z] INFO: Controller mounted for app testApp: /api 
+[2025-03-29T08:19:47.208Z] INFO: Controller removed for app testApp: /api 
+[2025-03-29T08:19:47.209Z] INFO: Added middleware for app testApp 
+[2025-03-29T08:19:47.210Z] INFO: Added middleware for app testApp 
+[2025-03-29T08:19:47.210Z] INFO: Middleware removed for app testApp 
+[2025-03-29T08:19:47.211Z] INFO: Models [TestModel] have been registered. 
+[2025-03-29T08:19:47.213Z] INFO: Model TestModel has been unregistered. 
+[2025-03-29T08:19:47.214Z] INFO: Setting TEST_SETTING was set 
+[2025-03-29T08:19:47.215Z] INFO: Setting TEST_SETTING was removed from storage 
+[2025-03-29T08:19:47.407Z] INFO: Model App was not registered for app system because it already exists. Skipping. 
+[2025-03-29T08:19:47.409Z] INFO: Model Setting was not registered for app system because it already exists. Skipping. 
+[2025-03-29T08:19:47.445Z] INFO: Models [] have been registered. 
+[2025-03-29T08:19:47.446Z] INFO: Controller mounted for app system: /switch 
+[2025-03-29T08:19:47.452Z] INFO: Setting ALLOW_UNSAFE_SETTINGS was set 
+[2025-03-29T08:19:47.453Z] INFO: System app mounted 
+[2025-03-29T08:19:47.458Z] INFO: Setting saved in database: ALLOW_UNSAFE_SETTINGS: true 
+[2025-03-29T08:19:47.511Z] INFO: Setting saved in database: ALLOW_UNSAFE_SETTINGS: false 
+[2025-03-29T08:19:56.574Z] WARN: Timeout exceeded for event "testEvent" 
+[2025-03-29T08:19:56.579Z] WARN: No listeners found for event "testEvent" 
+[2025-03-29T08:19:56.580Z] WARN: Event "testEvent" was not found in EventStorage 
+[2025-03-29T08:19:56.824Z] INFO: Assets for app testApp added: /assets/testApp → C:\test\apps\testApp\assets 
+[2025-03-29T08:19:56.829Z] WARN: Assets folder not found for app testApp: C:\test\apps\testApp\assets 
+[2025-03-29T08:19:56.830Z] INFO: Assets for app testApp added: /assets/testApp → C:\test\apps\testApp\assets 
+[2025-03-29T08:19:56.831Z] INFO: Assets route removed for app testApp: /assets/testApp 
+[2025-03-29T08:19:56.832Z] INFO: Controller mounted for app testApp: /api 
+[2025-03-29T08:19:56.833Z] INFO: Controller mounted for app testApp: /api 
+[2025-03-29T08:19:56.834Z] INFO: Controller removed for app testApp: /api 
+[2025-03-29T08:19:56.835Z] INFO: Added middleware for app testApp 
+[2025-03-29T08:19:56.836Z] INFO: Added middleware for app testApp 
+[2025-03-29T08:19:56.836Z] INFO: Middleware removed for app testApp 
+[2025-03-29T08:19:56.837Z] INFO: Models [TestModel] have been registered. 
+[2025-03-29T08:19:56.838Z] INFO: Model TestModel has been unregistered. 
+[2025-03-29T08:19:56.839Z] INFO: Setting TEST_SETTING was set 
+[2025-03-29T08:19:56.840Z] INFO: Setting TEST_SETTING was removed from storage 
+[2025-03-29T08:19:57.000Z] INFO: Model App was not registered for app system because it already exists. Skipping. 
+[2025-03-29T08:19:57.003Z] INFO: Model Setting was not registered for app system because it already exists. Skipping. 
+[2025-03-29T08:19:57.037Z] INFO: Models [] have been registered. 
+[2025-03-29T08:19:57.038Z] INFO: Controller mounted for app system: /switch 
+[2025-03-29T08:19:57.043Z] INFO: Setting ALLOW_UNSAFE_SETTINGS was set 
+[2025-03-29T08:19:57.044Z] INFO: System app mounted 
+[2025-03-29T08:19:57.048Z] INFO: Setting saved in database: ALLOW_UNSAFE_SETTINGS: true 
+[2025-03-29T08:19:57.113Z] INFO: Setting saved in database: ALLOW_UNSAFE_SETTINGS: false 
+[2025-03-29T08:20:10.118Z] WARN: Timeout exceeded for event "testEvent" 
+[2025-03-29T08:20:10.123Z] WARN: No listeners found for event "testEvent" 
+[2025-03-29T08:20:10.124Z] WARN: Event "testEvent" was not found in EventStorage 
+[2025-03-29T08:20:10.333Z] INFO: Assets for app testApp added: /assets/testApp → C:\test\apps\testApp\assets 
+[2025-03-29T08:20:10.339Z] WARN: Assets folder not found for app testApp: C:\test\apps\testApp\assets 
+[2025-03-29T08:20:10.340Z] INFO: Assets for app testApp added: /assets/testApp → C:\test\apps\testApp\assets 
+[2025-03-29T08:20:10.340Z] INFO: Assets route removed for app testApp: /assets/testApp 
+[2025-03-29T08:20:10.342Z] INFO: Controller mounted for app testApp: /api 
+[2025-03-29T08:20:10.343Z] INFO: Controller mounted for app testApp: /api 
+[2025-03-29T08:20:10.343Z] INFO: Controller removed for app testApp: /api 
+[2025-03-29T08:20:10.344Z] INFO: Added middleware for app testApp 
+[2025-03-29T08:20:10.345Z] INFO: Added middleware for app testApp 
+[2025-03-29T08:20:10.345Z] INFO: Middleware removed for app testApp 
+[2025-03-29T08:20:10.346Z] INFO: Models [TestModel] have been registered. 
+[2025-03-29T08:20:10.347Z] INFO: Model TestModel has been unregistered. 
+[2025-03-29T08:20:10.348Z] INFO: Setting TEST_SETTING was set 
+[2025-03-29T08:20:10.349Z] INFO: Setting TEST_SETTING was removed from storage 
+[2025-03-29T08:20:10.504Z] INFO: Model App was not registered for app system because it already exists. Skipping. 
+[2025-03-29T08:20:10.506Z] INFO: Model Setting was not registered for app system because it already exists. Skipping. 
+[2025-03-29T08:20:10.538Z] INFO: Models [] have been registered. 
+[2025-03-29T08:20:10.539Z] INFO: Controller mounted for app system: /switch 
+[2025-03-29T08:20:10.544Z] INFO: Setting ALLOW_UNSAFE_SETTINGS was set 
+[2025-03-29T08:20:10.545Z] INFO: System app mounted 
+[2025-03-29T08:20:10.550Z] INFO: Setting saved in database: ALLOW_UNSAFE_SETTINGS: true 
+[2025-03-29T08:20:10.599Z] INFO: Setting saved in database: ALLOW_UNSAFE_SETTINGS: false 
+[2025-03-29T08:20:44.359Z] WARN: Timeout exceeded for event "testEvent" 
+[2025-03-29T08:20:44.366Z] WARN: No listeners found for event "testEvent" 
+[2025-03-29T08:23:48.798Z] WARN: Timeout exceeded for event "testEvent" 
+[2025-03-29T08:23:48.806Z] WARN: No listeners found for event "testEvent" 
+[2025-03-29T08:23:49.041Z] INFO: Assets for app testApp added: /assets/testApp → C:\test\apps\testApp\assets 
+[2025-03-29T08:23:49.047Z] WARN: Assets folder not found for app testApp: C:\test\apps\testApp\assets 
+[2025-03-29T08:23:49.048Z] INFO: Assets for app testApp added: /assets/testApp → C:\test\apps\testApp\assets 
+[2025-03-29T08:23:49.048Z] INFO: Assets route removed for app testApp: /assets/testApp 
+[2025-03-29T08:23:49.050Z] INFO: Controller mounted for app testApp: /api 
+[2025-03-29T08:23:49.051Z] INFO: Controller mounted for app testApp: /api 
+[2025-03-29T08:23:49.051Z] INFO: Controller removed for app testApp: /api 
+[2025-03-29T08:23:49.052Z] INFO: Added middleware for app testApp 
+[2025-03-29T08:23:49.053Z] INFO: Added middleware for app testApp 
+[2025-03-29T08:23:49.053Z] INFO: Middleware removed for app testApp 
+[2025-03-29T08:23:49.054Z] INFO: Models [TestModel] have been registered. 
+[2025-03-29T08:23:49.055Z] INFO: Model TestModel has been unregistered. 
+[2025-03-29T08:23:49.056Z] INFO: Setting TEST_SETTING was set 
+[2025-03-29T08:23:49.057Z] INFO: Setting TEST_SETTING was removed from storage 
+[2025-03-29T08:23:49.220Z] INFO: Model App was not registered for app system because it already exists. Skipping. 
+[2025-03-29T08:23:49.222Z] INFO: Model Setting was not registered for app system because it already exists. Skipping. 
+[2025-03-29T08:23:49.257Z] INFO: Models [] have been registered. 
+[2025-03-29T08:23:49.258Z] INFO: Controller mounted for app system: /switch 
+[2025-03-29T08:23:49.263Z] INFO: Setting ALLOW_UNSAFE_SETTINGS was set 
+[2025-03-29T08:23:49.264Z] INFO: System app mounted 
+[2025-03-29T08:23:49.269Z] INFO: Setting saved in database: ALLOW_UNSAFE_SETTINGS: true 
+[2025-03-29T08:23:49.325Z] INFO: Setting saved in database: ALLOW_UNSAFE_SETTINGS: false 
+[2025-03-29T08:25:52.028Z] WARN: Timeout exceeded for event "testEvent" 
+[2025-03-29T08:25:52.033Z] WARN: No listeners found for event "testEvent" 
+[2025-03-29T08:25:52.260Z] INFO: Assets for app testApp added: /assets/testApp → C:\test\apps\testApp\assets 
+[2025-03-29T08:25:52.265Z] WARN: Assets folder not found for app testApp: C:\test\apps\testApp\assets 
+[2025-03-29T08:25:52.267Z] INFO: Assets for app testApp added: /assets/testApp → C:\test\apps\testApp\assets 
+[2025-03-29T08:25:52.267Z] INFO: Assets route removed for app testApp: /assets/testApp 
+[2025-03-29T08:25:52.269Z] INFO: Controller mounted for app testApp: /api 
+[2025-03-29T08:25:52.270Z] INFO: Controller mounted for app testApp: /api 
+[2025-03-29T08:25:52.270Z] INFO: Controller removed for app testApp: /api 
+[2025-03-29T08:25:52.271Z] INFO: Added middleware for app testApp 
+[2025-03-29T08:25:52.272Z] INFO: Added middleware for app testApp 
+[2025-03-29T08:25:52.273Z] INFO: Middleware removed for app testApp 
+[2025-03-29T08:25:52.274Z] INFO: Models [TestModel] have been registered. 
+[2025-03-29T08:25:52.275Z] INFO: Model TestModel has been unregistered. 
+[2025-03-29T08:25:52.276Z] INFO: Setting TEST_SETTING was set 
+[2025-03-29T08:25:52.277Z] INFO: Setting TEST_SETTING was removed from storage 
+[2025-03-29T08:25:52.431Z] INFO: Model App was not registered for app system because it already exists. Skipping. 
+[2025-03-29T08:25:52.434Z] INFO: Model Setting was not registered for app system because it already exists. Skipping. 
+[2025-03-29T08:25:52.465Z] INFO: Models [] have been registered. 
+[2025-03-29T08:25:52.466Z] INFO: Controller mounted for app system: /switch 
+[2025-03-29T08:25:52.471Z] INFO: Setting ALLOW_UNSAFE_SETTINGS was set 
+[2025-03-29T08:25:52.472Z] INFO: System app mounted 
+[2025-03-29T08:25:52.477Z] INFO: Setting saved in database: ALLOW_UNSAFE_SETTINGS: true 
+[2025-03-29T08:25:52.546Z] INFO: Setting saved in database: ALLOW_UNSAFE_SETTINGS: false 
+[2025-03-29T08:30:34.920Z] WARN: Timeout exceeded for event "testEvent" 
+[2025-03-29T08:30:34.925Z] WARN: No listeners found for event "testEvent" 
+[2025-03-29T08:33:19.613Z] INFO: System app mounted 
+[2025-03-29T08:33:19.624Z] ERROR: Can not get value for setting ALLOW_UNSAFE_SETTINGS. It should be registered in storage 
+[2025-03-29T08:33:19.625Z] ERROR: Can not get value for setting ALLOW_UNSAFE_SETTINGS. It should be registered in storage 
+[2025-03-29T08:33:32.182Z] INFO: Model App was not registered for app system because it already exists. Skipping. 
+[2025-03-29T08:33:32.184Z] INFO: Model Setting was not registered for app system because it already exists. Skipping. 
+[2025-03-29T08:33:32.219Z] INFO: Models [] have been registered. 
+[2025-03-29T08:33:32.220Z] INFO: Controller mounted for app system: /switch 
+[2025-03-29T08:33:32.226Z] INFO: Setting ALLOW_UNSAFE_SETTINGS was set 
+[2025-03-29T08:33:32.227Z] INFO: System app mounted 
+[2025-03-29T08:33:50.464Z] INFO: Model App was not registered for app system because it already exists. Skipping. 
+[2025-03-29T08:33:50.466Z] INFO: Model Setting was not registered for app system because it already exists. Skipping. 
+[2025-03-29T08:33:50.499Z] INFO: Models [] have been registered. 
+[2025-03-29T08:33:50.500Z] INFO: Controller mounted for app system: /switch 
+[2025-03-29T08:33:50.506Z] INFO: Setting ALLOW_UNSAFE_SETTINGS was set 
+[2025-03-29T08:33:50.507Z] INFO: System app mounted 
+[2025-03-29T08:33:50.511Z] INFO: Setting saved in database: ALLOW_UNSAFE_SETTINGS: true 
+[2025-03-29T08:33:50.565Z] INFO: Setting saved in database: ALLOW_UNSAFE_SETTINGS: false 
+[2025-03-29T08:34:42.952Z] INFO: Model App was not registered for app system because it already exists. Skipping. 
+[2025-03-29T08:34:42.954Z] INFO: Model Setting was not registered for app system because it already exists. Skipping. 
+[2025-03-29T08:34:42.987Z] INFO: Models [] have been registered. 
+[2025-03-29T08:34:42.988Z] INFO: Controller mounted for app system: /switch 
+[2025-03-29T08:34:42.993Z] INFO: Setting ALLOW_UNSAFE_SETTINGS was set 
+[2025-03-29T08:34:42.994Z] INFO: System app mounted 
+[2025-03-29T08:34:42.999Z] INFO: Setting saved in database: ALLOW_UNSAFE_SETTINGS: true 
+[2025-03-29T08:34:43.061Z] INFO: Setting saved in database: ALLOW_UNSAFE_SETTINGS: false 
+[2025-03-29T08:34:45.273Z] INFO: Assets for app testApp added: /assets/testApp → C:\test\apps\testApp\assets 
+[2025-03-29T08:34:45.281Z] WARN: Assets folder not found for app testApp: C:\test\apps\testApp\assets 
+[2025-03-29T08:34:45.283Z] INFO: Assets for app testApp added: /assets/testApp → C:\test\apps\testApp\assets 
+[2025-03-29T08:34:45.283Z] INFO: Assets route removed for app testApp: /assets/testApp 
+[2025-03-29T08:34:45.285Z] INFO: Controller mounted for app testApp: /api 
+[2025-03-29T08:34:45.287Z] INFO: Controller mounted for app testApp: /api 
+[2025-03-29T08:34:45.287Z] INFO: Controller removed for app testApp: /api 
+[2025-03-29T08:34:45.289Z] INFO: Added middleware for app testApp 
+[2025-03-29T08:34:45.289Z] INFO: Added middleware for app testApp 
+[2025-03-29T08:34:45.290Z] INFO: Middleware removed for app testApp 
+[2025-03-29T08:34:45.291Z] INFO: Models [TestModel] have been registered. 
+[2025-03-29T08:34:45.293Z] INFO: Model TestModel has been unregistered. 
+[2025-03-29T08:34:45.294Z] INFO: Setting TEST_SETTING was set 
+[2025-03-29T08:34:45.295Z] INFO: Setting TEST_SETTING was removed from storage 
+[2025-03-29T08:35:33.546Z] WARN: Timeout exceeded for event "testEvent" 
+[2025-03-29T08:35:33.551Z] WARN: No listeners found for event "testEvent" 
+[2025-03-29T08:37:50.751Z] INFO: Model App was not registered for app system because it already exists. Skipping. 
+[2025-03-29T08:37:50.755Z] INFO: Model Setting was not registered for app system because it already exists. Skipping. 
+[2025-03-29T08:37:50.859Z] INFO: Models [] have been registered. 
+[2025-03-29T08:37:50.862Z] INFO: Controller mounted for app system: /switch 
+[2025-03-29T08:37:50.873Z] INFO: Setting ALLOW_UNSAFE_SETTINGS was set 
+[2025-03-29T08:37:50.875Z] INFO: System app mounted 
+[2025-03-29T08:37:50.887Z] INFO: Setting saved in database: ALLOW_UNSAFE_SETTINGS: true 
+[2025-03-29T08:37:50.947Z] INFO: Setting saved in database: ALLOW_UNSAFE_SETTINGS: false 
+[2025-03-29T08:44:11.754Z] WARN: Timeout exceeded for event "testEvent" 
+[2025-03-29T08:44:11.761Z] WARN: No listeners found for event "testEvent" 
+[2025-03-29T08:44:11.962Z] INFO: Assets for app testApp added: /assets/testApp → C:\test\apps\testApp\assets 
+[2025-03-29T08:44:11.969Z] WARN: Assets folder not found for app testApp: C:\test\apps\testApp\assets 
+[2025-03-29T08:44:11.970Z] INFO: Assets for app testApp added: /assets/testApp → C:\test\apps\testApp\assets 
+[2025-03-29T08:44:11.970Z] INFO: Assets route removed for app testApp: /assets/testApp 
+[2025-03-29T08:44:11.972Z] INFO: Controller mounted for app testApp: /api 
+[2025-03-29T08:44:11.973Z] INFO: Controller mounted for app testApp: /api 
+[2025-03-29T08:44:11.974Z] INFO: Controller removed for app testApp: /api 
+[2025-03-29T08:44:11.975Z] INFO: Added middleware for app testApp 
+[2025-03-29T08:44:11.976Z] INFO: Added middleware for app testApp 
+[2025-03-29T08:44:11.976Z] INFO: Middleware removed for app testApp 
+[2025-03-29T08:44:11.977Z] INFO: Models [TestModel] have been registered. 
+[2025-03-29T08:44:11.978Z] INFO: Model TestModel has been unregistered. 
+[2025-03-29T08:44:11.979Z] INFO: Setting TEST_SETTING was set 
+[2025-03-29T08:44:11.980Z] INFO: Setting TEST_SETTING was removed from storage 
+[2025-03-29T08:44:12.147Z] INFO: Model App was not registered for app system because it already exists. Skipping. 
+[2025-03-29T08:44:12.150Z] INFO: Model Setting was not registered for app system because it already exists. Skipping. 
+[2025-03-29T08:44:12.185Z] INFO: Models [] have been registered. 
+[2025-03-29T08:44:12.186Z] INFO: Controller mounted for app system: /switch 
+[2025-03-29T08:44:12.192Z] INFO: Setting ALLOW_UNSAFE_SETTINGS was set 
+[2025-03-29T08:44:12.193Z] INFO: System app mounted 
+[2025-03-29T08:44:12.198Z] INFO: Setting saved in database: ALLOW_UNSAFE_SETTINGS: true 
+[2025-03-29T08:44:12.260Z] INFO: Setting saved in database: ALLOW_UNSAFE_SETTINGS: false 
+[2025-03-29T08:45:31.367Z] INFO: Connected to PostgreSQL! 
+[2025-03-29T08:45:31.420Z] INFO: Models [App, Setting] have been registered. 
+[2025-03-29T08:45:31.421Z] INFO: Controller mounted for app system: /switch 
+[2025-03-29T08:45:31.427Z] INFO: Setting ALLOW_UNSAFE_SETTINGS was set 
+[2025-03-29T08:45:31.428Z] INFO: System app mounted 
+[2025-03-29T08:45:31.432Z] INFO: AppManager started on http://localhost:3000 
+[2025-03-29T08:47:12.709Z] INFO: Connected to PostgreSQL! 
+[2025-03-29T08:47:12.713Z] INFO: Sequelize ORM initialized! 
+[2025-03-29T08:47:12.766Z] INFO: Models [App, Setting] have been registered. 
+[2025-03-29T08:47:12.766Z] INFO: Controller mounted for app system: /switch 
+[2025-03-29T08:47:12.773Z] INFO: Setting ALLOW_UNSAFE_SETTINGS was set 
+[2025-03-29T08:47:12.797Z] ERROR: Can not load app [C:\Users\rsere\WebstormProjects\app-manager\fixture/apps/example] TypeError: Cannot convert undefined or null to object
+    at Function.getOwnPropertyDescriptor (<anonymous>)
+    at C:\Users\rsere\WebstormProjects\app-manager\node_modules\sequelize-typescript\dist\model\column\column.js:18:131
+    at __decorateElement (file:///C:/Users/rsere/WebstormProjects/app-manager/fixture/apps/example/models/ExampleModel.ts:1:2161)
+    at <anonymous> (C:\Users\rsere\WebstormProjects\app-manager\fixture\apps\example\models\ExampleModel.ts:7:3)
+    at ModuleJob.run (node:internal/modules/esm/module_job:222:25)
+    at async ModuleLoader.import (node:internal/modules/esm/loader:323:24)
+    at SystemApp.loadApp (C:\Users\rsere\WebstormProjects\app-manager\dist\system\SystemApp.js:190:27)
+    at SystemApp.loadApps (C:\Users\rsere\WebstormProjects\app-manager\dist\system\SystemApp.js:129:17)
+    at SystemApp.mount (C:\Users\rsere\WebstormProjects\app-manager\dist\system\SystemApp.js:38:9)
+    at async SystemApp._mount (file:///C:/Users/rsere/WebstormProjects/app-manager/dist/lib/AbstractApp.js:61:9) 
+[2025-03-29T08:47:12.798Z] INFO: System app mounted 
+[2025-03-29T08:47:12.801Z] INFO: AppManager started on http://localhost:3000 
+[2025-03-29T08:49:21.257Z] INFO: Connected to PostgreSQL! 
+[2025-03-29T08:49:21.261Z] INFO: Sequelize ORM initialized! 
+[2025-03-29T08:49:21.315Z] INFO: Models [App, Setting] have been registered. 
+[2025-03-29T08:49:21.315Z] INFO: Controller mounted for app system: /switch 
+[2025-03-29T08:49:21.321Z] INFO: Setting ALLOW_UNSAFE_SETTINGS was set 
+[2025-03-29T08:49:21.353Z] ERROR: Can not load app [C:\Users\rsere\WebstormProjects\app-manager\fixture/apps/example] TransformError: Transform failed with 2 errors:
+C:\Users\rsere\WebstormProjects\app-manager\fixture\apps\example\models\ExampleModel.ts:6:2: ERROR: Decorators are not valid here
+C:\Users\rsere\WebstormProjects\app-manager\fixture\apps\example\models\ExampleModel.ts:9:2: ERROR: Decorators are not valid here
+    at failureErrorWithLog (C:\Users\rsere\WebstormProjects\app-manager\node_modules\esbuild\lib\main.js:1477:15)
+    at C:\Users\rsere\WebstormProjects\app-manager\node_modules\esbuild\lib\main.js:756:50
+    at responseCallbacks.<computed> (C:\Users\rsere\WebstormProjects\app-manager\node_modules\esbuild\lib\main.js:623:9)
+    at handleIncomingPacket (C:\Users\rsere\WebstormProjects\app-manager\node_modules\esbuild\lib\main.js:678:12)
+    at Socket.readFromStdout (C:\Users\rsere\WebstormProjects\app-manager\node_modules\esbuild\lib\main.js:601:7)
+    at Socket.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+    at Readable.push (node:internal/streams/readable:390:5)
+    at Pipe.onStreamRead (node:internal/stream_base_commons:190:23) 
+[2025-03-29T08:49:21.354Z] INFO: System app mounted 
+[2025-03-29T08:49:21.357Z] INFO: AppManager started on http://localhost:3000 
+[2025-03-29T08:54:48.335Z] INFO: Connected to PostgreSQL! 
+[2025-03-29T08:54:48.340Z] INFO: Sequelize ORM initialized! 
+[2025-03-29T08:54:48.392Z] INFO: Models [App, Setting] have been registered. 
+[2025-03-29T08:54:48.393Z] INFO: Controller mounted for app system: /switch 
+[2025-03-29T08:54:48.398Z] INFO: Setting ALLOW_UNSAFE_SETTINGS was set 
+[2025-03-29T08:54:48.408Z] INFO: Controller mounted for app example: /example 
+[2025-03-29T08:54:48.449Z] INFO: Models [ExampleModel] have been registered. 
+[2025-03-29T08:54:48.450Z] INFO: Setting example-setting was set 
+[2025-03-29T08:54:48.451Z] INFO: System app mounted 
+[2025-03-29T08:54:48.453Z] INFO: AppManager started on http://localhost:3000 
+[2025-03-29T08:55:56.843Z] WARN: Timeout exceeded for event "testEvent" 
+[2025-03-29T08:55:56.848Z] WARN: No listeners found for event "testEvent" 
+[2025-03-29T08:55:57.064Z] INFO: Assets for app testApp added: /assets/testApp → C:\test\apps\testApp\assets 
+[2025-03-29T08:55:57.071Z] WARN: Assets folder not found for app testApp: C:\test\apps\testApp\assets 
+[2025-03-29T08:55:57.072Z] INFO: Assets for app testApp added: /assets/testApp → C:\test\apps\testApp\assets 
+[2025-03-29T08:55:57.072Z] INFO: Assets route removed for app testApp: /assets/testApp 
+[2025-03-29T08:55:57.074Z] INFO: Controller mounted for app testApp: /api 
+[2025-03-29T08:55:57.075Z] INFO: Controller mounted for app testApp: /api 
+[2025-03-29T08:55:57.075Z] INFO: Controller removed for app testApp: /api 
+[2025-03-29T08:55:57.076Z] INFO: Added middleware for app testApp 
+[2025-03-29T08:55:57.077Z] INFO: Added middleware for app testApp 
+[2025-03-29T08:55:57.077Z] INFO: Middleware removed for app testApp 
+[2025-03-29T08:55:57.078Z] INFO: Models [TestModel] have been registered. 
+[2025-03-29T08:55:57.079Z] INFO: Model TestModel has been unregistered. 
+[2025-03-29T08:55:57.080Z] INFO: Setting TEST_SETTING was set 
+[2025-03-29T08:55:57.081Z] INFO: Setting TEST_SETTING was removed from storage 
+[2025-03-29T08:55:57.240Z] INFO: Model App was not registered for app system because it already exists. Skipping. 
+[2025-03-29T08:55:57.242Z] INFO: Model Setting was not registered for app system because it already exists. Skipping. 
+[2025-03-29T08:55:57.274Z] INFO: Models [] have been registered. 
+[2025-03-29T08:55:57.275Z] INFO: Controller mounted for app system: /switch 
+[2025-03-29T08:55:57.280Z] INFO: Setting ALLOW_UNSAFE_SETTINGS was set 
+[2025-03-29T08:55:57.281Z] INFO: System app mounted 
+[2025-03-29T08:55:57.285Z] INFO: Setting saved in database: ALLOW_UNSAFE_SETTINGS: true 
+[2025-03-29T08:55:57.336Z] INFO: Setting saved in database: ALLOW_UNSAFE_SETTINGS: false 
+[2025-03-31T12:27:51.794Z] ERROR: Timeout exceeded for event "testEvent" 
+[2025-03-31T12:27:52.004Z] INFO: Assets for app testApp added: /assets/testApp → C:\test\apps\testApp\assets 
+[2025-03-31T12:27:52.012Z] WARN: Assets folder not found for app testApp: C:\test\apps\testApp\assets 
+[2025-03-31T12:27:52.013Z] INFO: Assets for app testApp added: /assets/testApp → C:\test\apps\testApp\assets 
+[2025-03-31T12:27:52.014Z] INFO: Assets route removed for app testApp: /assets/testApp 
+[2025-03-31T12:27:52.016Z] INFO: Controller mounted for app testApp: /api 
+[2025-03-31T12:27:52.017Z] INFO: Controller mounted for app testApp: /api 
+[2025-03-31T12:27:52.017Z] INFO: Controller removed for app testApp: /api 
+[2025-03-31T12:27:52.018Z] INFO: Added middleware for app testApp 
+[2025-03-31T12:27:52.019Z] INFO: Added middleware for app testApp 
+[2025-03-31T12:27:52.019Z] INFO: Middleware removed for app testApp 
+[2025-03-31T12:27:52.020Z] INFO: Models [TestModel] have been registered. 
+[2025-03-31T12:27:52.021Z] INFO: Model TestModel has been unregistered. 
+[2025-03-31T12:27:52.023Z] INFO: Setting TEST_SETTING was set 
+[2025-03-31T12:27:52.023Z] INFO: Setting TEST_SETTING was removed from storage 
+[2025-03-31T12:27:52.278Z] INFO: Model App was not registered for app system because it already exists. Skipping. 
+[2025-03-31T12:27:52.280Z] INFO: Model Setting was not registered for app system because it already exists. Skipping. 
+[2025-03-31T12:27:52.322Z] INFO: Models [] have been registered. 
+[2025-03-31T12:27:52.322Z] INFO: Controller mounted for app system: /switch 
+[2025-03-31T12:27:52.328Z] INFO: Setting ALLOW_UNSAFE_SETTINGS was set 
+[2025-03-31T12:27:52.329Z] INFO: System app mounted 
+[2025-03-31T12:27:52.333Z] INFO: Setting saved in database: ALLOW_UNSAFE_SETTINGS: true 
+[2025-03-31T12:27:52.389Z] INFO: Setting saved in database: ALLOW_UNSAFE_SETTINGS: false 
+[2025-03-31T12:28:25.508Z] ERROR: Timeout exceeded for event "testEvent" 
+[2025-03-31T12:28:38.105Z] ERROR: Timeout exceeded for event "testEvent" 
+[2025-03-31T12:28:38.313Z] INFO: Assets for app testApp added: /assets/testApp → C:\test\apps\testApp\assets 
+[2025-03-31T12:28:38.320Z] WARN: Assets folder not found for app testApp: C:\test\apps\testApp\assets 
+[2025-03-31T12:28:38.321Z] INFO: Assets for app testApp added: /assets/testApp → C:\test\apps\testApp\assets 
+[2025-03-31T12:28:38.321Z] INFO: Assets route removed for app testApp: /assets/testApp 
+[2025-03-31T12:28:38.323Z] INFO: Controller mounted for app testApp: /api 
+[2025-03-31T12:28:38.324Z] INFO: Controller mounted for app testApp: /api 
+[2025-03-31T12:28:38.324Z] INFO: Controller removed for app testApp: /api 
+[2025-03-31T12:28:38.325Z] INFO: Added middleware for app testApp 
+[2025-03-31T12:28:38.326Z] INFO: Added middleware for app testApp 
+[2025-03-31T12:28:38.326Z] INFO: Middleware removed for app testApp 
+[2025-03-31T12:28:38.327Z] INFO: Models [TestModel] have been registered. 
+[2025-03-31T12:28:38.329Z] INFO: Model TestModel has been unregistered. 
+[2025-03-31T12:28:38.330Z] INFO: Setting TEST_SETTING was set 
+[2025-03-31T12:28:38.331Z] INFO: Setting TEST_SETTING was removed from storage 
+[2025-03-31T12:28:38.497Z] INFO: Model App was not registered for app system because it already exists. Skipping. 
+[2025-03-31T12:28:38.499Z] INFO: Model Setting was not registered for app system because it already exists. Skipping. 
+[2025-03-31T12:28:38.531Z] INFO: Models [] have been registered. 
+[2025-03-31T12:28:38.532Z] INFO: Controller mounted for app system: /switch 
+[2025-03-31T12:28:38.537Z] INFO: Setting ALLOW_UNSAFE_SETTINGS was set 
+[2025-03-31T12:28:38.538Z] INFO: System app mounted 
+[2025-03-31T12:28:38.543Z] INFO: Setting saved in database: ALLOW_UNSAFE_SETTINGS: true 
+[2025-03-31T12:28:38.596Z] INFO: Setting saved in database: ALLOW_UNSAFE_SETTINGS: false 
+[2025-03-31T12:29:12.834Z] ERROR: Timeout exceeded for event "testEvent" 
+[2025-03-31T12:29:33.216Z] ERROR: Timeout exceeded for event "testEvent" 
+[2025-03-31T12:29:40.524Z] ERROR: Timeout exceeded for event "testEvent" 
+[2025-03-31T12:30:17.120Z] INFO: Model App was not registered for app system because it already exists. Skipping. 
+[2025-03-31T12:30:17.123Z] INFO: Model Setting was not registered for app system because it already exists. Skipping. 
+[2025-03-31T12:30:17.158Z] INFO: Models [] have been registered. 
+[2025-03-31T12:30:17.158Z] INFO: Controller mounted for app system: /switch 
+[2025-03-31T12:30:17.164Z] INFO: Setting ALLOW_UNSAFE_SETTINGS was set 
+[2025-03-31T12:30:17.165Z] INFO: System app mounted 
+[2025-03-31T12:30:17.171Z] INFO: Setting saved in database: ALLOW_UNSAFE_SETTINGS: true 
+[2025-03-31T12:30:17.220Z] INFO: Setting saved in database: ALLOW_UNSAFE_SETTINGS: false 
+[2025-03-31T12:37:56.715Z] ERROR: Timeout exceeded for event "testEvent" 
+[2025-03-31T12:37:57.117Z] INFO: Assets for app testApp added: /assets/testApp → C:\test\apps\testApp\assets 
+[2025-03-31T12:37:57.124Z] WARN: Assets folder not found for app testApp: C:\test\apps\testApp\assets 
+[2025-03-31T12:37:57.125Z] INFO: Assets for app testApp added: /assets/testApp → C:\test\apps\testApp\assets 
+[2025-03-31T12:37:57.125Z] INFO: Assets route removed for app testApp: /assets/testApp 
+[2025-03-31T12:37:57.127Z] INFO: Controller mounted for app testApp: /api 
+[2025-03-31T12:37:57.129Z] INFO: Controller mounted for app testApp: /api 
+[2025-03-31T12:37:57.129Z] INFO: Controller removed for app testApp: /api 
+[2025-03-31T12:37:57.131Z] INFO: Added middleware for app testApp 
+[2025-03-31T12:37:57.132Z] INFO: Added middleware for app testApp 
+[2025-03-31T12:37:57.132Z] INFO: Middleware removed for app testApp 
+[2025-03-31T12:37:57.134Z] INFO: Models [TestModel] have been registered. 
+[2025-03-31T12:37:57.137Z] INFO: Model TestModel has been unregistered. 
+[2025-03-31T12:37:57.139Z] INFO: Setting TEST_SETTING was set 
+[2025-03-31T12:37:57.140Z] INFO: Setting TEST_SETTING was removed from storage 
+[2025-03-31T12:37:57.478Z] INFO: Model App was not registered for app system because it already exists. Skipping. 
+[2025-03-31T12:37:57.484Z] INFO: Model Setting was not registered for app system because it already exists. Skipping. 
+[2025-03-31T12:37:57.601Z] INFO: Models [] have been registered. 
+[2025-03-31T12:37:57.603Z] INFO: Controller mounted for app system: /switch 
+[2025-03-31T12:37:57.612Z] INFO: Setting ALLOW_UNSAFE_SETTINGS was set 
+[2025-03-31T12:37:57.614Z] INFO: System app mounted 
+[2025-03-31T12:37:57.624Z] INFO: Setting saved in database: ALLOW_UNSAFE_SETTINGS: true 
+[2025-03-31T12:37:57.677Z] INFO: Setting saved in database: ALLOW_UNSAFE_SETTINGS: false 

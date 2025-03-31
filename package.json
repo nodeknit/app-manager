@@ -1,0 +1,32 @@
+{
+  "name": "app-manager",
+  "type": "module",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest",
+    "fixture-start": "node ./fixture/index.js",
+    "start": "node ./dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "adminizer": "github:adminization/adminizer#main",
+    "ajv": "^8.17.1",
+    "express": "^4.21.2",
+    "pg": "^8.13.3",
+    "semver": "^7.7.1",
+    "sequelize": "^6.37.5",
+    "sequelize-typescript": "^2.1.6",
+    "winston": "^3.17.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/pg": "^8.11.11",
+    "@types/semver": "^7.5.8",
+    "tsx": "^4.19.3",
+    "vitest": "^3.0.7"
+  }
+}
