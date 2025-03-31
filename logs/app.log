@@ -501,3 +501,33 @@ C:\Users\rsere\WebstormProjects\app-manager\fixture\apps\example\models\ExampleM
 [2025-03-31T12:37:57.614Z] INFO: System app mounted 
 [2025-03-31T12:37:57.624Z] INFO: Setting saved in database: ALLOW_UNSAFE_SETTINGS: true 
 [2025-03-31T12:37:57.677Z] INFO: Setting saved in database: ALLOW_UNSAFE_SETTINGS: false 
+[2025-03-31T13:54:30.335Z] ERROR: Timeout exceeded for event "testEvent" 
+[2025-03-31T13:54:30.533Z] INFO: Assets for app testApp added: /assets/testApp → C:\test\apps\testApp\assets 
+[2025-03-31T13:54:30.539Z] WARN: Assets folder not found for app testApp: C:\test\apps\testApp\assets 
+[2025-03-31T13:54:30.540Z] INFO: Assets for app testApp added: /assets/testApp → C:\test\apps\testApp\assets 
+[2025-03-31T13:54:30.540Z] INFO: Assets route removed for app testApp: /assets/testApp 
+[2025-03-31T13:54:30.542Z] INFO: Controller mounted for app testApp: /api 
+[2025-03-31T13:54:30.543Z] INFO: Controller mounted for app testApp: /api 
+[2025-03-31T13:54:30.543Z] INFO: Controller removed for app testApp: /api 
+[2025-03-31T13:54:30.544Z] INFO: Added middleware for app testApp 
+[2025-03-31T13:54:30.545Z] INFO: Added middleware for app testApp 
+[2025-03-31T13:54:30.545Z] INFO: Middleware removed for app testApp 
+[2025-03-31T13:54:30.546Z] INFO: Models [TestModel] have been registered. 
+[2025-03-31T13:54:30.547Z] INFO: Model TestModel has been unregistered. 
+[2025-03-31T13:54:30.548Z] INFO: Setting TEST_SETTING was set 
+[2025-03-31T13:54:30.549Z] INFO: Setting TEST_SETTING was removed from storage 
+[2025-03-31T13:55:37.793Z] ERROR: Timeout exceeded for event "testEvent" 
+[2025-03-31T13:55:44.020Z] INFO: Assets for app testApp added: /assets/testApp → /test/apps/testApp/assets 
+[2025-03-31T13:55:44.023Z] WARN: Assets folder not found for app testApp: /test/apps/testApp/assets 
+[2025-03-31T13:55:44.024Z] INFO: Assets for app testApp added: /assets/testApp → /test/apps/testApp/assets 
+[2025-03-31T13:55:44.024Z] INFO: Assets route removed for app testApp: /assets/testApp 
+[2025-03-31T13:55:44.026Z] INFO: Controller mounted for app testApp: /api 
+[2025-03-31T13:55:44.026Z] INFO: Controller mounted for app testApp: /api 
+[2025-03-31T13:55:44.027Z] INFO: Controller removed for app testApp: /api 
+[2025-03-31T13:55:44.027Z] INFO: Added middleware for app testApp 
+[2025-03-31T13:55:44.028Z] INFO: Added middleware for app testApp 
+[2025-03-31T13:55:44.028Z] INFO: Middleware removed for app testApp 
+[2025-03-31T13:55:44.029Z] INFO: Models [TestModel] have been registered. 
+[2025-03-31T13:55:44.030Z] INFO: Model TestModel has been unregistered. 
+[2025-03-31T13:55:44.031Z] INFO: Setting TEST_SETTING was set 
+[2025-03-31T13:55:44.031Z] INFO: Setting TEST_SETTING was removed from storage 

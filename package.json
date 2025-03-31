@@ -3,6 +3,7 @@
   "type": "module",
   "version": "1.0.0",
   "main": "index.js",
+  "typings": "index.d.ts",
   "scripts": {
     "test": "vitest",
     "fixture-start": "node ./fixture/index.js",
