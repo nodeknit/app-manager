@@ -4,6 +4,7 @@ on:
     branches-ignore:
       - master
       - next
+      - alpha
 jobs:
   build:
     runs-on: ubuntu-latest
