@@ -19,7 +19,6 @@
     "pg": "^8.13.3",
     "semver": "^7.7.1",
     "sequelize": "^6.37.5",
-    "sequelize-typescript": "^2.1.6",
     "winston": "^3.17.0"
   },
   "devDependencies": {
@@ -27,6 +26,7 @@
     "@types/pg": "^8.11.11",
     "@types/semver": "^7.5.8",
     "tsx": "^4.19.3",
+    "sequelize-typescript": "^2.1.6",
     "vitest": "^3.0.7"
   }
 }
