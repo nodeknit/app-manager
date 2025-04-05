@@ -15,7 +15,8 @@
     "noImplicitAny": true,
     "noImplicitReturns": true,
     "lib": ["dom", "esnext"],
-    "outDir": "dist"
+    "outDir": "dist",
+    "resolveJsonModule": true
   },
   "ts-node": {
     "esm": true,
@@ -24,6 +25,7 @@
   "lib": ["esnext"],
   "exclude": ["node_modules"],
   "include": [
-    "src/**/*.ts"
+    "src/**/*.ts",
+    "./package.json"
   ]
 }

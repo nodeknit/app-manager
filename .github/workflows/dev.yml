@@ -1,0 +1,13 @@
+name: Run tests
+on:
+  push:
+    branches-ignore:
+      - master
+      - next
+      - alpha
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: npm i && npm run test
