@@ -12,8 +12,19 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '22'
+
       - name: Install dependencies
         run: npm install
+
+      - name: Clear npm cache
+        run: npm cache clean --force
+
+      - name: List files in the project
+        run: ls -la
 
       - name: Run tests
         run: npm run test

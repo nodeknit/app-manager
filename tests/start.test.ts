@@ -1,6 +1,5 @@
 import { describe, it, beforeAll, expect } from "vitest";
 import { Sequelize } from "sequelize-typescript";
-import { App } from "../src/system/models/App.js";
 import { Setting } from "../src/system/models/Setting.js";
 import { AppManager } from "../src/lib/AppManager.js";
 import getDefaultConfig from "../src/system/defaults.js";
