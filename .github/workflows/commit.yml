@@ -21,7 +21,7 @@ jobs:
         run: npm i 
 
       - name: build
-      - run: tsc
+        run: tsc
 
       # - name: Run tests
       #   run: npm run test
