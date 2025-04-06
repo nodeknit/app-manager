@@ -1,5 +1,5 @@
 {
-  "name": "app-manager",
+  "name": "@nodeknit/app-manager",
   "type": "module",
   "version": "1.0.0",
   "main": "index.js",
