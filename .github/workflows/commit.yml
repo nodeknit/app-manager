@@ -17,11 +17,14 @@ jobs:
           node-version: '22'
         uses: actions/setup-node@v3
 
+      - name: Install TypeScript
+        run: npm install -g typescript
+
       - name: Install dependencies
         run: npm i 
 
       - name: build
-        run: tsc
+        run: tsc -p ./tsconfig.json
 
       # - name: Run tests
       #   run: npm run test
