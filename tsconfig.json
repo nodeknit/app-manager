@@ -1,33 +1,28 @@
 {
-	"compilerOptions": {
-		"module": "ESNext",
-		"target": "ESNext",
-		"moduleResolution": "Node",
-		"esModuleInterop": true,
-		"sourceMap": false,
-		"declaration": true,
-		"removeComments": false,
-		"skipLibCheck": true,
-		"emitDecoratorMetadata": true,
-		"experimentalDecorators": true,
-		// "strict": true,
-		"alwaysStrict": true,
-		"noImplicitAny": true,
-		"noImplicitReturns": true,
-		"lib": ["dom", "esnext"],
-		"rootDir": "./",
-		"baseUrl": "./",
-		"outDir": "../dist",
-    "traceResolution": true,
-    "paths": {
-      "*": ["node_modules/*", "src/*"]
-    }
+  "compilerOptions": {
+    "module": "ESNext",
+    "target": "ESNext",
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "sourceMap": false,
+    "declaration": true,
+    "removeComments": false,
+    "skipLibCheck": true,
+    "emitDecoratorMetadata": false,
+    "experimentalDecorators": true,
+    // "strict": true,
+    "alwaysStrict": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "lib": ["dom", "esnext"],
+    "outDir": "dist",
+    "resolveJsonModule": true
   },
-	"ts-node": {
-		"esm": true,
-		"experimentalSpecifierResolution": "node"
-	},
-	"lib": ["esnext"],
+  "ts-node": {
+    "esm": true,
+    "experimentalSpecifierResolution": "node"
+  },
+  "lib": ["esnext"],
   "exclude": ["node_modules"],
   "include": [
     "src/**/*.ts",
