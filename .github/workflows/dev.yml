@@ -1,13 +1,42 @@
 name: Run tests
+
 on:
   push:
     branches-ignore:
       - master
       - next
-      - alpha
+
 jobs:
   build:
     runs-on: ubuntu-latest
+
+    services:
+      postgres:
+        image: postgres:15
+        ports:
+          - 5432:5432
+        env:
+          POSTGRES_USER: username
+          POSTGRES_PASSWORD: password
+          POSTGRES_DB: my_database
+        options: >-
+          --health-cmd="pg_isready"
+          --health-interval=10s
+          --health-timeout=5s
+          --health-retries=5
+
     steps:
       - uses: actions/checkout@v3
-      - run: npm i && npm run test
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Wait for PostgreSQL
+        run: |
+          until pg_isready -h localhost -p 5432 -U username; do
+            echo "Waiting for postgres..."
+            sleep 1
+          done
+
+      - name: Run tests
+        run: npm run test

@@ -12,15 +12,28 @@ import RuntimeApp from "../interfaces/runtimeApp";
 import getDefaultConfig from "../system/defaults.js";
 import fs from "fs";
 import {AsyncEventEmitter} from "./AsyncEventEmitter.js";
+import { Server, IncomingMessage, ServerResponse } from "node:http";
 
 export class AppManager {
-  public app: Express
   public config: AppManagerConfig
   public sequelize: Sequelize
   public collectionStorage: CollectionStorage;
   public settingStorage: SettingStorage;
   public appStorage: AppStorage;
   public emitter: AsyncEventEmitter;
+  
+  
+  public app: Express
+  /**
+   * * @description The server instance
+  */
+  public server: Server<typeof IncomingMessage, typeof ServerResponse>
+  public lift(port: number): Server<typeof IncomingMessage, typeof ServerResponse> {
+    this.server = this.app.listen(port, () => {
+       AppManager.log.info(`AppManager started on http://localhost:${port}`);
+    });
+    return this.server;
+  }
 
   static logger = winston.createLogger({
     level: "info",
