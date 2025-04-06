@@ -17,7 +17,7 @@
     "lib": ["dom", "esnext"],
     "outDir": "dist",
     "resolveJsonModule": true
-,б  },
+  },
   "ts-node": {
     "esm": true,
     "experimentalSpecifierResolution": "node"
