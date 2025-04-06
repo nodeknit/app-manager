@@ -1,6 +1,6 @@
 import { AbstractCollectionHandler, CollectionItem } from "../../lib/CollectionStorage.js";
 import { AppManager } from "../../lib/AppManager.js";
-import {IController} from "../../lib/AbstractApp";
+import {IController} from "../../lib/AbstractApp.js";
 
 export class ControllerHandler extends AbstractCollectionHandler {
   async process(appManager: AppManager, data: CollectionItem[]): Promise<void> {

@@ -9,7 +9,7 @@ import { ModelHandler } from "../src/system/handlers/ModelHandler";
 import { SettingHandler } from "../src/system/handlers/SettingHandler";
 import {SettingStorage} from "../src/lib/SettingStorage";
 
-process.env.NODE_ENV = 'production' // for model test
+process.env.NODE_ENV = 'production'
 
 vi.mock("fs");
 

@@ -1,6 +1,6 @@
 import {AbstractCollectionHandler, CollectionItem} from "../../lib/CollectionStorage.js";
 import {AppManager} from "../../lib/AppManager.js";
-import {ISettingSlot} from "../../lib/SettingStorage";
+import {ISettingSlot} from "../../lib/SettingStorage.js";
 import {Setting} from "../models/Setting.js";
 
 export class SettingHandler extends AbstractCollectionHandler {

@@ -1,6 +1,6 @@
 import {AbstractApp} from "../lib/AbstractApp.js";
 import {Collection, CollectionHandler} from "../lib/decorators/appUtils.js";
-import {ModelHandler} from "./handlers/modelHandler.js";
+import {ModelHandler} from "./handlers/ModelHandler.js";
 import {App} from "./models/App.js";
 import {Setting} from "./models/Setting.js";
 import {AppManager} from "../lib/AppManager.js";
@@ -8,12 +8,12 @@ import fs from "fs";
 import path from "path";
 import semver from "semver";
 import RuntimeApp from "../interfaces/runtimeApp";
-import {SettingHandler} from "./handlers/settingHandler.js";
+import {SettingHandler} from "./handlers/SettingHandler.js";
 import {AllowUnsafeSettings} from "./settings/allowUnsafeSettings.js";
 import {pathToFileURL} from "url";
 import SwitchController from "./controllers/SwitchController.js";
-import {ControllerHandler} from "./handlers/controllerHandler.js";
-import {EventHandler} from "./handlers/eventHandler.js";
+import {ControllerHandler} from "./handlers/ControllerHandler.js";
+import {EventHandler} from "./handlers/EventHandler.js";
 import {EventAppLoaded} from "./events/appEvents.js";
 
 
