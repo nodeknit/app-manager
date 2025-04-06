@@ -8,7 +8,7 @@
     "declaration": true,
     "removeComments": false,
     "skipLibCheck": true,
-    "emitDecoratorMetadata": false,
+    "emitDecoratorMetadata": false, // causes metadata generation in models (so cycled models import does not work)
     "experimentalDecorators": true,
     // "strict": true,
     "alwaysStrict": true,
@@ -17,7 +17,7 @@
     "lib": ["dom", "esnext"],
     "outDir": "dist",
     "resolveJsonModule": true
-  },
+,б  },
   "ts-node": {
     "esm": true,
     "experimentalSpecifierResolution": "node"
