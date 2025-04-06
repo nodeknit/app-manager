@@ -16,7 +16,12 @@
     "noImplicitReturns": true,
     "lib": ["dom", "esnext"],
     "outDir": "dist",
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "baseUrl": "./",
+    "paths": {
+      "@src/*": ["src/*"]  // алиас для src
+    },
+    "allowJs": true
   },
   "ts-node": {
     "esm": true,
