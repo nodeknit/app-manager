@@ -1,7 +1,7 @@
-import {AbstractCollectionHandler, CollectionItem} from "../../lib/CollectionStorage.js";
-import {AppManager} from "../../lib/AppManager.js";
-import {ISettingSlot} from "../../lib/SettingStorage.js";
-import {Setting} from "../models/Setting.js";
+import {AbstractCollectionHandler, CollectionItem} from "../../lib/CollectionStorage";
+import {AppManager} from "../../lib/AppManager";
+import {ISettingSlot} from "../../lib/SettingStorage";
+import {Setting} from "../models/Setting";
 
 export class SettingHandler extends AbstractCollectionHandler {
   async process(appManager: AppManager, data: CollectionItem[]): Promise<void> {

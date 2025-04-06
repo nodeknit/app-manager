@@ -3,15 +3,15 @@ import {Model, Sequelize} from "sequelize-typescript";
 import * as path from "node:path";
 import winston from "winston";
 import {AppManagerConfig} from "../interfaces/appManagerConfig";
-import {CollectionStorage} from "./CollectionStorage.js";
-import {SettingStorage} from "./SettingStorage.js";
-import {AppStorage} from "./AppStorage.js";
+import {CollectionStorage} from "./CollectionStorage";
+import {SettingStorage} from "./SettingStorage";
+import {AppStorage} from "./AppStorage";
 import {ModelStatic} from "sequelize";
 import {AbstractApp} from "./AbstractApp";
 import RuntimeApp from "../interfaces/runtimeApp";
-import getDefaultConfig from "../system/defaults.js";
+import getDefaultConfig from "../system/defaults";
 import fs from "fs";
-import {AsyncEventEmitter} from "./AsyncEventEmitter.js";
+import {AsyncEventEmitter} from "./AsyncEventEmitter";
 import { Server, IncomingMessage, ServerResponse } from "node:http";
 
 export class AppManager {

@@ -1,4 +1,4 @@
-import {AppManager} from "./AppManager.js";
+import {AppManager} from "./AppManager";
 import { EventEmitter } from 'events';
 
 

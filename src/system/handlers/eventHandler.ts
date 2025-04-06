@@ -1,6 +1,6 @@
-import { AbstractCollectionHandler, CollectionItem } from "../../lib/CollectionStorage.js";
-import { AppManager } from "../../lib/AppManager.js";
-import { AbstractEvent } from "../../lib/AsyncEventEmitter.js";
+import { AbstractCollectionHandler, CollectionItem } from "../../lib/CollectionStorage";
+import { AppManager } from "../../lib/AppManager";
+import { AbstractEvent } from "../../lib/AsyncEventEmitter";
 
 export class EventHandler extends AbstractCollectionHandler {
   async process(appManager: AppManager, data: CollectionItem[]): Promise<void> {

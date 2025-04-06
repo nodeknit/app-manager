@@ -7,12 +7,12 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-import { AbstractApp } from "../../../dist/lib/AbstractApp.js";
-import { Collection, CollectionHandler } from "../../../dist/lib/decorators/appUtils.js";
-import { ExampleModel } from "./models/ExampleModel.js";
-import ExampleController from "./controllers/ExampleController.js";
-import { AbstractCollectionHandler } from "../../../dist/lib/CollectionStorage.js";
-import { ExampleSetting } from "./settings/exampleSetting.js";
+import { AbstractApp } from "../../../dist/lib/AbstractApp";
+import { Collection, CollectionHandler } from "../../../dist/lib/decorators/appUtils";
+import { ExampleModel } from "./models/ExampleModel";
+import ExampleController from "./controllers/ExampleController";
+import { AbstractCollectionHandler } from "../../../dist/lib/CollectionStorage";
+import { ExampleSetting } from "./settings/exampleSetting";
 class Resolver {
     name = "ExampleResolver";
 }

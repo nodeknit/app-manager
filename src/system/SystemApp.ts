@@ -1,20 +1,20 @@
-import {AbstractApp} from "../lib/AbstractApp.js";
-import {Collection, CollectionHandler} from "../lib/decorators/appUtils.js";
-import {ModelHandler} from "./handlers/ModelHandler.js";
-import {App} from "./models/App.js";
-import {Setting} from "./models/Setting.js";
-import {AppManager} from "../lib/AppManager.js";
+import {AbstractApp} from "../lib/AbstractApp";
+import {Collection, CollectionHandler} from "../lib/decorators/appUtils";
+import {ModelHandler} from "./handlers/ModelHandler";
+import {App} from "./models/App";
+import {Setting} from "./models/Setting";
+import {AppManager} from "../lib/AppManager";
 import fs from "fs";
 import path from "path";
 import semver from "semver";
 import RuntimeApp from "../interfaces/runtimeApp";
-import {SettingHandler} from "./handlers/SettingHandler.js";
-import {AllowUnsafeSettings} from "./settings/allowUnsafeSettings.js";
+import {SettingHandler} from "./handlers/SettingHandler";
+import {AllowUnsafeSettings} from "./settings/allowUnsafeSettings";
 import {pathToFileURL} from "url";
-import SwitchController from "./controllers/SwitchController.js";
-import {ControllerHandler} from "./handlers/ControllerHandler.js";
-import {EventHandler} from "./handlers/EventHandler.js";
-import {EventAppLoaded} from "./events/appEvents.js";
+import SwitchController from "./controllers/SwitchController";
+import {ControllerHandler} from "./handlers/ControllerHandler";
+import {EventHandler} from "./handlers/EventHandler";
+import {EventAppLoaded} from "./events/appEvents";
 
 
 export default class SystemApp extends AbstractApp {

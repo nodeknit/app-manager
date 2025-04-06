@@ -9,8 +9,8 @@ import {
   BeforeCreate,
 } from 'sequelize-typescript';
 import { InferAttributes, InferCreationAttributes } from 'sequelize';
-import {AppManager} from "../../lib/AppManager.js";
-import {AssignAppManager} from "../../lib/decorators/appUtils.js";
+import {AppManager} from "../../lib/AppManager";
+import {AssignAppManager} from "../../lib/decorators/appUtils";
 
 @Table({ tableName: 'settings', timestamps: false })
 export class Setting extends Model<InferAttributes<Setting>, InferCreationAttributes<Setting>> {

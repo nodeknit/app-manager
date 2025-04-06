@@ -1,10 +1,10 @@
-import { AbstractApp } from "../../../dist/lib/AbstractApp.js";
-import { AppManager } from "../../../dist/lib/AppManager.js";
-import { ExampleModel } from "./models/ExampleModel.js";
-import ExampleController from "./controllers/ExampleController.js";
-import { AbstractCollectionHandler } from "../../../dist/lib/CollectionStorage.js";
-import { CollectionItem } from "../../../dist/lib/CollectionStorage.js";
-import { ExampleSetting } from "./settings/exampleSetting.js";
+import { AbstractApp } from "../../../dist/lib/AbstractApp";
+import { AppManager } from "../../../dist/lib/AppManager";
+import { ExampleModel } from "./models/ExampleModel";
+import ExampleController from "./controllers/ExampleController";
+import { AbstractCollectionHandler } from "../../../dist/lib/CollectionStorage";
+import { CollectionItem } from "../../../dist/lib/CollectionStorage";
+import { ExampleSetting } from "./settings/exampleSetting";
 declare class Resolver {
     name: string;
 }

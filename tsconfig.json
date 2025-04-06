@@ -19,7 +19,7 @@
     "resolveJsonModule": true,
     "baseUrl": "./",
     "paths": {
-      "@src/*": ["src/*"]  // алиас для src
+      "@src/*": ["src/*"]
     },
     "allowJs": true
   },

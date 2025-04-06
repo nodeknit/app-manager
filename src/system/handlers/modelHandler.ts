@@ -1,5 +1,5 @@
-import { AbstractCollectionHandler, CollectionItem } from "../../lib/CollectionStorage.js";
-import { AppManager } from "../../lib/AppManager.js";
+import { AbstractCollectionHandler, CollectionItem } from "../../lib/CollectionStorage";
+import { AppManager } from "../../lib/AppManager";
 import {Model, ModelCtor} from "sequelize-typescript";
 
 export class ModelHandler extends AbstractCollectionHandler {

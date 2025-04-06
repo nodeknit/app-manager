@@ -1,6 +1,6 @@
 import Ajv from 'ajv';
-import {AppManager} from "./AppManager.js";
-import {AllowUnsafeSettings} from "../system/settings/allowUnsafeSettings.js";
+import {AppManager} from "./AppManager";
+import {AllowUnsafeSettings} from "../system/settings/allowUnsafeSettings";
 
 export interface ISettingSlot {
   key: string

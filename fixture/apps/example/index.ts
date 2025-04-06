@@ -1,12 +1,12 @@
-import {AbstractApp} from "../../../dist/lib/AbstractApp.js";
-import {AppManager} from "../../../dist/lib/AppManager.js";
-import {Collection, CollectionHandler} from "../../../dist/lib/decorators/appUtils.js";
+import {AbstractApp} from "../../../dist/lib/AbstractApp";
+import {AppManager} from "../../../dist/lib/AppManager";
+import {Collection, CollectionHandler} from "../../../dist/lib/decorators/appUtils";
 
-import {ExampleModel} from "./models/ExampleModel.js";
-import ExampleController from "./controllers/ExampleController.js";
-import {AbstractCollectionHandler} from "../../../dist/lib/CollectionStorage.js";
-import {CollectionItem} from "../../../dist/lib/CollectionStorage.js";
-import {ExampleSetting} from "./settings/exampleSetting.js";
+import {ExampleModel} from "./models/ExampleModel";
+import ExampleController from "./controllers/ExampleController";
+import {AbstractCollectionHandler} from "../../../dist/lib/CollectionStorage";
+import {CollectionItem} from "../../../dist/lib/CollectionStorage";
+import {ExampleSetting} from "./settings/exampleSetting";
 
 class Resolver {
   name: string = "ExampleResolver";

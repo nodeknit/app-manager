@@ -1,6 +1,6 @@
 import { Sequelize } from "sequelize-typescript";
-import { AppManager } from "../dist/lib/AppManager.js";
-import SystemApp from "../dist/system/SystemApp.js";
+import { AppManager } from "../dist/lib/AppManager";
+import SystemApp from "../dist/system/SystemApp";
 process.env.SECRET = "secret";
 process.env.INIT_APPS_TO_ENABLE = "example";
 try {
