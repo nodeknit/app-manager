@@ -18,7 +18,11 @@
 		"rootDir": "./",
 		"baseUrl": "./",
 		"outDir": "../dist",
-	},
+    "traceResolution": true,
+    "paths": {
+      "*": ["node_modules/*", "src/*"]
+    }
+  },
 	"ts-node": {
 		"esm": true,
 		"experimentalSpecifierResolution": "node"
