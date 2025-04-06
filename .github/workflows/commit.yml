@@ -27,7 +27,7 @@ jobs:
         run: tsc
 
 
-      - run: echo '//registry.npmjs.org/:_authToken=${NODE_AUTH_TOKEN}' > ./dist/.npmrc
+      - run: cp ./package.json ./dist && echo '//registry.npmjs.org/:_authToken=${NODE_AUTH_TOKEN}' > ./dist/.npmrc
 
       # resolve version with short commit hash
       - run: |
