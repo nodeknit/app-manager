@@ -20,15 +20,7 @@ let appManager: AppManager;
 let systemApp: SystemApp;
 
 beforeAll(async () => {
-  sequelize = new Sequelize({
-    database: "my_database",
-    username: "username",
-    password: "password",
-    host: "localhost",
-    dialect: "postgres",
-    port: 5432,
-    models: [App, Setting],
-  });
+  sequelize = new Sequelize('sqlite::memory:');
 
   await sequelize.authenticate();
   await sequelize.sync({ force: true });
