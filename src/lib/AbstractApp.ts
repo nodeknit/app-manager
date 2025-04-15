@@ -30,7 +30,7 @@ export abstract class AbstractApp {
 
   public appManager: AppManager;
 
-  protected constructor(appManager: AppManager) {
+  constructor(appManager: AppManager) {
     this.appManager = appManager;
   }
 

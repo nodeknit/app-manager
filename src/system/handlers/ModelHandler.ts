@@ -23,7 +23,6 @@ export class ModelHandler extends AbstractCollectionHandler {
 
     if (process.env.NODE_ENV !== 'production') {
       await appManager.sequelize.sync({ alter: true });
-      console.log("Synchronized database")
     } else {
       // TODO use migrations in production
     }

@@ -35,7 +35,7 @@ export function CollectionHandler(collectionName: string) {
 }
 
 /** @warning Works only in collection items (like model, controller, setting etc.) */
-export function AssignAppManager(target: any, propertyKey: string) {
+export function AssignAppManager(target: any, propertyKey: any) {
   if (!Reflect.hasMetadata("assignAppManagerFields", target)) {
     Reflect.defineMetadata("assignAppManagerFields", [], target);
   }
