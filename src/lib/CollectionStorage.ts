@@ -2,6 +2,7 @@ import {AppManager} from "./AppManager";
 
 export interface CollectionItem {
   appId: string
+  method?: 'get' | 'post' | 'put' | 'delete' | 'patch' | 'head' | 'options' | 'trace' | 'connect' | 'all';
   item: any
 }
 

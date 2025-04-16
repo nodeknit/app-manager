@@ -6,6 +6,7 @@ import {AbstractEvent} from "./AsyncEventEmitter";
 export interface IController {
   route: string
   controller: (req: ReqType, res: ResType) => void
+  method?: 'get' | 'post' | 'put' | 'delete' | 'patch' | 'head' | 'options' | 'trace' | 'connect' | 'all';
 }
 
 interface ISettingConstructor {
