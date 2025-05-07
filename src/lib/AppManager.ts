@@ -52,6 +52,8 @@ export class AppManager {
 
   constructor(sequelize: Sequelize) {
     this.app = express();
+    this.app.use(express.json());
+    
     this.sequelize = sequelize;
     this.collectionStorage = new CollectionStorage(this);
     this.settingStorage = new SettingStorage();
