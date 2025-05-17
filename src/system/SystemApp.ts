@@ -17,7 +17,7 @@ import { SettingHandler } from "./handlers/SettingHandler";
 import { EventHandler } from "./handlers/EventHandler";
 
 
-export default class SystemApp extends AbstractApp {
+export class SystemApp extends AbstractApp {
   appId = "system";
   name = "System";
 

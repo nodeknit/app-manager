@@ -22,7 +22,7 @@ export class ModelHandler extends AbstractCollectionHandler {
     appManager.sequelize.addModels(models);
 
     if (process.env.NODE_ENV !== 'production') {
-      await appManager.sequelize.sync({ alter: true });
+      await appManager.sequelize.sync({ force: true });
     } else {
       // TODO use migrations in production
     }
