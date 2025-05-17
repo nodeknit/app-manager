@@ -15,6 +15,7 @@ import { ModelHandler } from "./handlers/ModelHandler";
 import { ControllerHandler } from "./handlers/ControllerHandler";
 import { SettingHandler } from "./handlers/SettingHandler";
 import { EventHandler } from "./handlers/EventHandler";
+import { MiddlewareHandler } from "./handlers/MiddlewareHandler";
 
 
 export class SystemApp extends AbstractApp {
@@ -32,6 +33,9 @@ export class SystemApp extends AbstractApp {
 
   @CollectionHandler('controllers')
   controllerHandler = new ControllerHandler();
+
+  @CollectionHandler('middlewares')
+  middlewareHandler = new MiddlewareHandler();
 
   @Collection
   settings = [AllowUnsafeSettings];
