@@ -23,7 +23,6 @@ export class ControllerHandler extends AbstractCollectionHandler {
   async process(appManager: AppManager, data: ControllerCollectionItem[]): Promise<void> {
     data.forEach((item) => {
       const { route, controller, method } = item.item as IController;
-      console.log(">>>", item)
       if (!route || typeof controller !== "function") {
         AppManager.log.warn(`Invalid controller format for app ${item.appId}:`, item);
         return;
