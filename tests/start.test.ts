@@ -3,7 +3,7 @@ import { Sequelize } from "sequelize-typescript";
 import { Setting } from "../src/system/models/Setting";
 import { AppManager } from "../src/lib/AppManager";
 import getDefaultConfig from "../src/system/defaults";
-import SystemApp from "../src/system/SystemApp";
+import {SystemApp} from "../src/system/SystemApp";
 import {AllowUnsafeSettings} from "../src/system/settings/allowUnsafeSettings";
 
 type TestRuntimeApp = {
