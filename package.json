@@ -21,6 +21,9 @@
     "sequelize": "^6.37.5",
     "winston": "^3.17.0"
   },
+  "peerDependencies": {
+    "reflect-metadata": "^0.2.2"
+  },
   "devDependencies": {
     "@types/express": "^5.0.0",
     "@types/pg": "^8.11.11",
@@ -28,6 +31,9 @@
     "tsx": "^4.19.3",
     "sequelize-typescript": "^2.1.6",
     "sqlite3": "^5.1.7",
+    "reflect-metadata": "^0.2.2",
     "vitest": "^3.0.7"
   }
+
+
 }
