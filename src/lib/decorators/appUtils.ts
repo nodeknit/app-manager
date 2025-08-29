@@ -44,3 +44,25 @@ export function AssignAppManager(target: any, propertyKey: any) {
   fields.push(propertyKey);
   Reflect.defineMetadata("assignAppManagerFields", fields, target);
 }
+
+/**
+ Проблема в том, что декораторы могут падать, если зависимая библиотека отсутствует или работает не так, как ожидается.
+`safe` нужен, чтобы оборачивать такие декораторы и заставлять их тихо пропускать ошибки, не ломая весь код.
+ 
+  Это используется чтобы оборачивать декораторы в апликациях которые могут в продакшене не иметь декораторов из модулей
+*/
+export function safeAppDecorator<F extends (...a: any[]) => (v: any, c: any) => void>(factory: F): F {
+  return ((...args: any[]) => {
+    const inner = factory(...args);
+    return (value: any, context: any) => {
+      try { inner(value, context); }
+      catch (e) {
+        context.addInitializer?.(() => {
+          if (process.env.NODE_ENV !== 'production') {
+            console.warn('[admin] decorator failed, skipped:', e);
+          }
+        });
+      }
+    };
+  }) as any as F;
+}
