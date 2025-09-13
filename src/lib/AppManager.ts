@@ -29,8 +29,9 @@ export class AppManager {
   */
   public server: Server<typeof IncomingMessage, typeof ServerResponse>
   public lift(port: number): Server<typeof IncomingMessage, typeof ServerResponse> {
-    this.server = this.app.listen(port, () => {
-       AppManager.log.info(`AppManager started on http://localhost:${port}`);
+    const host = process.env.HOST || '0.0.0.0';
+    this.server = this.app.listen(port, host, () => {
+       AppManager.log.info(`AppManager started on http://${host}:${port}`);
     });
     return this.server;
   }
