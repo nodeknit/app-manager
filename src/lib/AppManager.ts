@@ -55,8 +55,12 @@ export class AppManager {
     this.app = express();
     this.app.use(express.json());
     // Basic health endpoints for K8s probes and diagnostics
-    this.app.get('/healthz', (_req, res) => res.status(200).send('ok'));
-    this.app.get('/readyz', (_req, res) => res.status(200).send('ok'));
+    this.app.get('/healthz', (_req, res) => {
+      res.status(200).send('ok');
+    });
+    this.app.get('/readyz', (_req, res) => {
+      res.status(200).send('ok');
+    });
     
     this.sequelize = sequelize;
     this.collectionStorage = new CollectionStorage(this);
