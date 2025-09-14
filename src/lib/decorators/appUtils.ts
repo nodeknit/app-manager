@@ -1,4 +1,7 @@
 import "reflect-metadata";
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 export function AddToCollection(collectionName: string) {
   return function (target: any, propertyKey: string) {
@@ -51,18 +54,23 @@ export function AssignAppManager(target: any, propertyKey: any) {
  
   Это используется чтобы оборачивать декораторы в апликациях которые могут в продакшене не иметь декораторов из модулей
 */
-export function safeAppDecorator<F extends (...a: any[]) => (v: any, c: any) => void>(factory: F): F {
-  return ((...args: any[]) => {
-    const inner = factory(...args);
-    return (value: any, context: any) => {
-      try { inner(value, context); }
-      catch (e) {
-        context.addInitializer?.(() => {
-          if (process.env.NODE_ENV !== 'production') {
-            console.warn('[admin] decorator failed, skipped:', e);
-          }
-        });
+export function safeAppDecorator<TOptions extends (...a: any[]) => (v: any, c: any) => void>(
+  moduleName: string, 
+  decoratorName: string
+): (options?: TOptions) => (target: any, propertyKey?: string | symbol, descriptor?: PropertyDescriptor) => any {
+  return (options?: TOptions) => {
+    return (target: any, propertyKey?: string | symbol, descriptor?: PropertyDescriptor) => {
+      try {
+        const module = require(moduleName);
+        const decorator = module[decoratorName];
+        return decorator(options)(target, propertyKey, descriptor);
+      } catch (e) {
+        // fallback
+        if (process.env.NODE_ENV !== 'production') {
+          console.warn('[admin] decorator failed, skipped:', e);
+        }
+        return descriptor || target;
       }
     };
-  }) as any as F;
+  };
 }
