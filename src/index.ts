@@ -4,3 +4,6 @@ export * from "./lib/AbstractApp";
 export * from "./lib/CollectionStorage";
 export * from "./lib/decorators/appUtils"
 export * from "./system/handlers/ControllerHandler"
+
+// Default export
+export { AppManager as default } from "./lib/AppManager";
