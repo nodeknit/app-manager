@@ -16,7 +16,7 @@ import { ControllerHandler } from "./handlers/ControllerHandler";
 import { SettingHandler } from "./handlers/SettingHandler";
 import { EventHandler } from "./handlers/EventHandler";
 import { MiddlewareHandler } from "./handlers/MiddlewareHandler";
-import { MigrationHandler } from "./handlers/MigrationHandler";
+import { MigrationHandler, Migration } from "./handlers/MigrationHandler";
 
 
 export class SystemApp extends AbstractApp {
@@ -49,6 +49,10 @@ export class SystemApp extends AbstractApp {
 
   @CollectionHandler('events')
   eventHandler = new EventHandler();
+
+  // Add empty migrations collection to prevent auto-generation
+  @Collection
+  migrations: Migration[] = [];
 
   @CollectionHandler('migrations')
   migrationHandler = new MigrationHandler();

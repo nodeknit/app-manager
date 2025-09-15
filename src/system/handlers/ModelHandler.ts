@@ -21,10 +21,15 @@ export class ModelHandler extends AbstractCollectionHandler {
 
     appManager.sequelize.addModels(models);
 
-    if(process.env.ORM_ALTER !== 'false'){
-      if (process.env.NODE_ENV !== 'production') {
-        await appManager.sequelize.sync({ force: true, alter: true });
-      }
+    // Check if sync should be performed
+    if (process.env.ORM_ALTER === 'false') {
+      AppManager.log.info(`Skipping model sync due to ORM_ALTER=false. Models [${models.map(item => item.name).join(", ")}] registered without sync.`);
+    } else if (process.env.NODE_ENV === 'production') {
+      AppManager.log.info(`Skipping model sync in production environment. Models [${models.map(item => item.name).join(", ")}] registered without sync.`);
+    } else {
+      AppManager.log.info(`Performing model sync for [${models.map(item => item.name).join(", ")}]`);
+      await appManager.sequelize.sync({ force: true, alter: true });
+      AppManager.log.info(`Models [${models.map(item => item.name).join(", ")}] have been synced.`);
     }
 
     AppManager.log.info(`Models [${models.map(item => item.name).join(", ")}] have been registered.`);
