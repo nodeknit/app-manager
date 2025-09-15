@@ -21,10 +21,10 @@ export class ModelHandler extends AbstractCollectionHandler {
 
     appManager.sequelize.addModels(models);
 
-    if (process.env.NODE_ENV !== 'production') {
-      await appManager.sequelize.sync({ force: true, alter: true });
-    } else {
-      // TODO use migrations in production
+    if(process.env.ORM_ALTER !== 'false'){
+      if (process.env.NODE_ENV !== 'production') {
+        await appManager.sequelize.sync({ force: true, alter: true });
+      }
     }
 
     AppManager.log.info(`Models [${models.map(item => item.name).join(", ")}] have been registered.`);
