@@ -16,6 +16,7 @@ import { ControllerHandler } from "./handlers/ControllerHandler";
 import { SettingHandler } from "./handlers/SettingHandler";
 import { EventHandler } from "./handlers/EventHandler";
 import { MiddlewareHandler } from "./handlers/MiddlewareHandler";
+import { MigrationHandler } from "./handlers/MigrationHandler";
 
 
 export class SystemApp extends AbstractApp {
@@ -48,6 +49,9 @@ export class SystemApp extends AbstractApp {
 
   @CollectionHandler('events')
   eventHandler = new EventHandler();
+
+  @CollectionHandler('migrations')
+  migrationHandler = new MigrationHandler();
 
   constructor(appManager: AppManager) {
     super(appManager);
