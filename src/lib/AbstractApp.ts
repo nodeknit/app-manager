@@ -42,6 +42,11 @@ export abstract class AbstractApp {
 
   public async _mount() {
     // Register collection handlers
+
+    if(!this.appId || !this.name) {
+      throw `App must have appId and name properties`;
+    }
+
     const collectionHandlers = Reflect.getMetadata("collectionHandlers", this.constructor.prototype) || [];
     for (const { collectionName, propertyKey } of collectionHandlers) {
       const handler = this[propertyKey] as AbstractCollectionHandler;
