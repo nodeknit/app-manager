@@ -18,8 +18,8 @@ interface IEventConstructor {
 }
 
 export abstract class AbstractApp {
-  public abstract appId: string;
-  public abstract name: string;
+  public abstract readonly appId: string;
+  public abstract readonly name: string;
   public models: any[];
   public controllers: IController[];
   public settings: ISettingConstructor[];
