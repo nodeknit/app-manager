@@ -2,7 +2,7 @@
   "compilerOptions": {
     "module": "ESNext",
     "target": "ESNext",
-    "moduleResolution": "Node",
+    "moduleResolution": "Bundler",
     "esModuleInterop": true,
     "sourceMap": false,
     "declaration": true,
@@ -15,6 +15,7 @@
     "noImplicitAny": true,
     "noImplicitReturns": true,
     "lib": ["dom", "esnext"],
+    "rootDir": "src",
     "outDir": "dist",
     "resolveJsonModule": true
   },
