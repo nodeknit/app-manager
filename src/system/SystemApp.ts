@@ -61,6 +61,47 @@ export class SystemApp extends AbstractApp {
     super(appManager);
   }
 
+  private isMissingTableError(error: unknown): boolean {
+    const message = error instanceof Error ? error.message : String(error);
+
+    return (
+      message.includes("SQLITE_ERROR: no such table: apps") ||
+      message.includes('relation "apps" does not exist') ||
+      message.includes("Table 'apps' doesn't exist")
+    );
+  }
+
+  private isDependencyVersionSatisfied(currentVersion: string, requiredVersion: string): boolean {
+    if (!requiredVersion || requiredVersion === "*") {
+      return true;
+    }
+
+    if (!currentVersion) {
+      return false;
+    }
+
+    if (currentVersion === "*") {
+      return true;
+    }
+
+    if (semver.valid(currentVersion) && semver.valid(requiredVersion)) {
+      return !semver.lt(currentVersion, requiredVersion);
+    }
+
+    if (semver.validRange(currentVersion) && semver.validRange(requiredVersion)) {
+      const currentMinVersion = semver.minVersion(currentVersion);
+      const requiredMinVersion = semver.minVersion(requiredVersion);
+
+      if (!currentMinVersion || !requiredMinVersion) {
+        return true;
+      }
+
+      return !semver.lt(currentMinVersion, requiredMinVersion);
+    }
+
+    return currentVersion === requiredVersion;
+  }
+
   private getAppIdsFromEnv(variableName: string): string[] {
     const rawValue = process.env[variableName];
     if (!rawValue) {
@@ -279,26 +320,37 @@ export class SystemApp extends AbstractApp {
     const shouldBeEnabled = shouldEnableByDefault && !disabledApps.has(packageJSON.appId);
 
     const AppModel = this.appManager.getModel(App);
-    let app = await AppModel.findOne({
-      where: { appId: packageJSON.appId },
-    });
-    if (!app) {
-      // creating record for installed app or database drop
-      app = await AppModel.create({
-        appId: packageJSON.appId,
-        enable: shouldBeEnabled
+    let app = null;
+
+    try {
+      app = await AppModel.findOne({
+        where: { appId: packageJSON.appId },
       });
 
-    } else {
-      // syncing enable flag with env defaults and forced disables
-      if (app.enable !== shouldBeEnabled) {
-        await AppModel.update(
-          { enable: shouldBeEnabled },
-          { where: { appId: packageJSON.appId } }
-        );
-        app = await AppModel.findOne({
-          where: { appId: packageJSON.appId },
+      if (!app) {
+        // creating record for installed app or database drop
+        app = await AppModel.create({
+          appId: packageJSON.appId,
+          enable: shouldBeEnabled
         });
+
+      } else {
+        // syncing enable flag with env defaults and forced disables
+        if (app.enable !== shouldBeEnabled) {
+          await AppModel.update(
+            { enable: shouldBeEnabled },
+            { where: { appId: packageJSON.appId } }
+          );
+          app = await AppModel.findOne({
+            where: { appId: packageJSON.appId },
+          });
+        }
+      }
+    } catch (error) {
+      if (this.isMissingTableError(error)) {
+        AppManager.log.warn(`Apps table is unavailable during bootstrap, using env defaults for ${packageJSON.appId}`);
+      } else {
+        throw error;
       }
     }
 
@@ -330,7 +382,7 @@ export class SystemApp extends AbstractApp {
     // }
 
 
-    runtimeApp["enable"] = Boolean(app.enable);
+    runtimeApp["enable"] = Boolean(app?.enable ?? shouldBeEnabled);
     runtimeApp["repository"] = repository;
     this.appManager.appStorage.add(packageJSON.appId, runtimeApp);
   }
@@ -353,7 +405,7 @@ export class SystemApp extends AbstractApp {
 
       if (!currentVersion) {
         missingApps.push(dependency);
-      } else if (semver.lt(currentVersion, requiredVersion)) {
+      } else if (!this.isDependencyVersionSatisfied(currentVersion, requiredVersion)) {
         outdatedApps.push({app: dependency, currentVersion, requiredVersion});
       }
     }
