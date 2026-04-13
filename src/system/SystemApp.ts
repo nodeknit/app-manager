@@ -61,6 +61,18 @@ export class SystemApp extends AbstractApp {
     super(appManager);
   }
 
+  private getAppIdsFromEnv(variableName: string): string[] {
+    const rawValue = process.env[variableName];
+    if (!rawValue) {
+      return [];
+    }
+
+    return rawValue
+      .split(";")
+      .map((item) => item.trim())
+      .filter(Boolean);
+  }
+
   async mount(): Promise<void> {
     // load apps in storage
     await this.loadApps();
@@ -261,7 +273,10 @@ export class SystemApp extends AbstractApp {
     runtimeApp["isSystemApp"] = systemAppList.includes(packageJSON.appId);
 
     // write data in App model
-    let appsToEnable = process.env.INIT_APPS_TO_ENABLE ? process.env.INIT_APPS_TO_ENABLE.split(";") : [];
+    const appsToEnable = this.getAppIdsFromEnv("INIT_APPS_TO_ENABLE");
+    const disabledApps = new Set(this.getAppIdsFromEnv("DISABLED_APPS"));
+    const shouldEnableByDefault = appsToEnable.includes(packageJSON.appId) || systemAppList.includes(packageJSON.appId);
+    const shouldBeEnabled = shouldEnableByDefault && !disabledApps.has(packageJSON.appId);
 
     const AppModel = this.appManager.getModel(App);
     let app = await AppModel.findOne({
@@ -271,20 +286,24 @@ export class SystemApp extends AbstractApp {
       // creating record for installed app or database drop
       app = await AppModel.create({
         appId: packageJSON.appId,
-        enable: appsToEnable.includes(packageJSON.appId) || systemAppList.includes(packageJSON.appId)
+        enable: shouldBeEnabled
       });
 
     } else {
-      // updating record if necessary
-      if (app.enable === false && (appsToEnable.includes(packageJSON.appId) || systemAppList.includes(packageJSON.appId))) {
+      // syncing enable flag with env defaults and forced disables
+      if (app.enable !== shouldBeEnabled) {
         await AppModel.update(
-          { enable: true },
+          { enable: shouldBeEnabled },
           { where: { appId: packageJSON.appId } }
         );
         app = await AppModel.findOne({
           where: { appId: packageJSON.appId },
         });
       }
+    }
+
+    if (disabledApps.has(packageJSON.appId)) {
+      AppManager.log.info(`App ${packageJSON.appId} disabled via DISABLED_APPS`);
     }
 
     // check hasUnfilledSettings flag
@@ -311,7 +330,7 @@ export class SystemApp extends AbstractApp {
     // }
 
 
-    runtimeApp["enable"] = app.enable || false;
+    runtimeApp["enable"] = Boolean(app.enable);
     runtimeApp["repository"] = repository;
     this.appManager.appStorage.add(packageJSON.appId, runtimeApp);
   }

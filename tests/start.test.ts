@@ -1,10 +1,14 @@
 import { describe, it, beforeAll, expect } from "vitest";
 import { Sequelize } from "sequelize-typescript";
 import { Setting } from "../src/system/models/Setting";
+import { App } from "../src/system/models/App";
 import { AppManager } from "../src/lib/AppManager";
 import getDefaultConfig from "../src/system/defaults";
 import {SystemApp} from "../src/system/SystemApp";
 import {AllowUnsafeSettings} from "../src/system/settings/allowUnsafeSettings";
+import fs from "node:fs";
+import os from "node:os";
+import path from "node:path";
 
 type TestRuntimeApp = {
   package: {
@@ -108,5 +112,57 @@ describe("Create proper queue to mount", () => {
     expect(() => systemApp.getAppQueueToMount.call({
       appManager: { appStorage: { getApps: () => mockApps } }
     })).toThrow("Circular dependency detected trying to create app queue. External maintenance required");
+  });
+});
+
+describe("Environment-based app toggles", () => {
+  it("should force App.enable=false for apps listed in DISABLED_APPS", async () => {
+    const tempAppDir = fs.mkdtempSync(path.join(os.tmpdir(), "app-manager-disabled-"));
+    const originalDisabledApps = process.env.DISABLED_APPS;
+    const originalInitApps = process.env.INIT_APPS_TO_ENABLE;
+
+    fs.writeFileSync(path.join(tempAppDir, "package.json"), JSON.stringify({
+      name: "@tests/app-disabled",
+      appId: "app-disabled",
+      version: "1.0.0",
+      description: "Test app for disabled env handling",
+      main: "index.mjs"
+    }, null, 2));
+
+    fs.writeFileSync(path.join(tempAppDir, "index.mjs"), `
+      export default class TestDisabledApp {
+        constructor(appManager) {
+          this.appManager = appManager;
+        }
+      }
+    `);
+
+    process.env.INIT_APPS_TO_ENABLE = "app-disabled";
+    process.env.DISABLED_APPS = "app-disabled";
+
+    try {
+      await systemApp.loadApp(tempAppDir);
+
+      const runtimeApp = appManager.appStorage.get("app-disabled");
+      const AppModel = appManager.getModel(App);
+      const appRecord = await AppModel.findOne({ where: { appId: "app-disabled" } });
+
+      expect(runtimeApp.enable).toBe(false);
+      expect(appRecord?.enable).toBe(false);
+    } finally {
+      if (originalDisabledApps === undefined) {
+        delete process.env.DISABLED_APPS;
+      } else {
+        process.env.DISABLED_APPS = originalDisabledApps;
+      }
+
+      if (originalInitApps === undefined) {
+        delete process.env.INIT_APPS_TO_ENABLE;
+      } else {
+        process.env.INIT_APPS_TO_ENABLE = originalInitApps;
+      }
+
+      fs.rmSync(tempAppDir, { recursive: true, force: true });
+    }
   });
 });
