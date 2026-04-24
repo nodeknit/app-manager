@@ -5,6 +5,7 @@ import {Setting} from "./models/Setting";
 import {AppManager} from "../lib/AppManager";
 import fs from "fs";
 import path from "path";
+import { DataTypes } from "sequelize";
 import semver from "semver";
 import RuntimeApp from "../interfaces/runtimeApp";
 import {AllowUnsafeSettings} from "./settings/allowUnsafeSettings";
@@ -50,9 +51,27 @@ export class SystemApp extends AbstractApp {
   @CollectionHandler('events')
   eventHandler = new EventHandler();
 
-  // Add empty migrations collection to prevent auto-generation
   @Collection
-  migrations: Migration[] = [];
+  migrations: Migration[] = [
+    {
+      name: 'system_init',
+      timestamp: 20250915000000,
+      up: async ({ context }: { context: any }) => {
+        await context.createTable('apps', {
+          appId: { type: DataTypes.STRING, allowNull: false, unique: true, primaryKey: true },
+          enable: { type: DataTypes.BOOLEAN },
+        });
+        await context.createTable('settings', {
+          key: { type: DataTypes.STRING, allowNull: false, unique: true, primaryKey: true },
+          value: { type: DataTypes.JSON },
+        });
+      },
+      down: async ({ context }: { context: any }) => {
+        await context.dropTable('settings');
+        await context.dropTable('apps');
+      },
+    },
+  ];
 
   @CollectionHandler('migrations')
   migrationHandler = new MigrationHandler();
