@@ -31,27 +31,6 @@ export class SystemApp extends AbstractApp {
   modelHandler = new ModelHandler()
 
   @Collection
-  controllers = [{route: '/switch', controller: SwitchController}];
-
-  @CollectionHandler('controllers')
-  controllerHandler = new ControllerHandler();
-
-  @CollectionHandler('middlewares')
-  middlewareHandler = new MiddlewareHandler();
-
-  @Collection
-  settings = [AllowUnsafeSettings];
-
-  @CollectionHandler('settings')
-  settingHandler = new SettingHandler();
-
-  @Collection
-  events = [EventAppLoaded];
-
-  @CollectionHandler('events')
-  eventHandler = new EventHandler();
-
-  @Collection
   migrations: Migration[] = [
     {
       name: 'system_init',
@@ -75,6 +54,27 @@ export class SystemApp extends AbstractApp {
 
   @CollectionHandler('migrations')
   migrationHandler = new MigrationHandler();
+
+  @Collection
+  settings = [AllowUnsafeSettings];
+
+  @CollectionHandler('settings')
+  settingHandler = new SettingHandler();
+
+  @Collection
+  controllers = [{route: '/switch', controller: SwitchController}];
+
+  @CollectionHandler('controllers')
+  controllerHandler = new ControllerHandler();
+
+  @CollectionHandler('middlewares')
+  middlewareHandler = new MiddlewareHandler();
+
+  @Collection
+  events = [EventAppLoaded];
+
+  @CollectionHandler('events')
+  eventHandler = new EventHandler();
 
   constructor(appManager: AppManager) {
     super(appManager);
