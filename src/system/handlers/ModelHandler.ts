@@ -22,13 +22,19 @@ export class ModelHandler extends AbstractCollectionHandler {
     appManager.sequelize.addModels(models);
 
     // Check if sync should be performed
-    if (process.env.ORM_ALTER === 'false') {
+    // ORM_ALTER=false  — skip sync entirely
+    // ORM_FORCE=true   — drop and recreate tables (dangerous, dev only)
+    // production       — skip sync (use migrations)
+    const ormAlter = process.env.ORM_ALTER !== 'false';
+    const ormForce = process.env.ORM_FORCE === 'true';
+
+    if (!ormAlter) {
       AppManager.log.info(`Skipping model sync due to ORM_ALTER=false. Models [${models.map(item => item.name).join(", ")}] registered without sync.`);
     } else if (process.env.NODE_ENV === 'production') {
       AppManager.log.info(`Skipping model sync in production environment. Models [${models.map(item => item.name).join(", ")}] registered without sync.`);
     } else {
-      AppManager.log.info(`Performing model sync for [${models.map(item => item.name).join(", ")}]`);
-      await appManager.sequelize.sync({ force: true, alter: true });
+      AppManager.log.info(`Performing model sync for [${models.map(item => item.name).join(", ")}] (force=${ormForce}, alter=true)`);
+      await appManager.sequelize.sync({ force: ormForce, alter: true });
       AppManager.log.info(`Models [${models.map(item => item.name).join(", ")}] have been synced.`);
     }
 

@@ -88,6 +88,35 @@ export default class ExampleApp extends AbstractApp {
 - `mount(): Promise<void>` – Defines the logic executed when the app is enabled.
 - `unmount(): Promise<void>` – Defines the logic executed when the app is disabled.
 
+## Environment Variables
+
+### Database Sync (`ORM_*`)
+
+These variables control how Sequelize syncs models on startup (only in non-production environments).
+
+| Variable | Default | Description |
+|---|---|---|
+| `ORM_ALTER` | `true` | Set to `false` to skip sync entirely — models are registered but no DDL changes are made |
+| `ORM_FORCE` | `false` | Set to `true` to drop and recreate all tables on sync — **destroys all data**, dev only |
+
+**Typical setups:**
+
+```bash
+# Dev — safe migration, data is preserved (default)
+# ORM_ALTER and ORM_FORCE are not set
+
+# Dev — reset database completely
+ORM_FORCE=true
+
+# Staging/CI — skip auto-sync, use migrations manually
+ORM_ALTER=false
+
+# Production — sync is always skipped regardless of these vars
+NODE_ENV=production
+```
+
+> `ORM_FORCE=true` is equivalent to the old `sync({ force: true })` behavior. Use only when you intentionally want to wipe the database.
+
 ## Collections and Handlers
 The App Manager uses decorators to define collections and their handlers. A collection represents a group of related data (e.g., models, controllers, settings). Each collection can have a corresponding handler.
 
