@@ -29,7 +29,7 @@ export class AppManager {
   */
   public server: Server<typeof IncomingMessage, typeof ServerResponse>
   public lift(port: number): Server<typeof IncomingMessage, typeof ServerResponse> {
-    const host = process.env.HOST || '127.0.0.1';
+    const host = process.env.HOST || '0.0.0.0';
     this.server = this.app.listen(port, host, () => {
        AppManager.log.info(`AppManager started on http://${host}:${port}`);
     });
