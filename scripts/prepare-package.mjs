@@ -29,6 +29,8 @@ const distPackageJson = {
     '.': {
       types: './index.d.ts',
       import: './index.js',
+      require: './index.js',
+      default: './index.js',
     },
   },
   keywords: packageJson.keywords,
